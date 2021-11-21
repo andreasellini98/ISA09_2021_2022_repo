@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Lab1_FIR_DUT
+Version: O-2018.06-SP4
+Date   : Fri Nov 19 12:15:26 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: b1[0] (input port clocked by MY_CLK)
+  Endpoint: REG_pipe_sum_2/Q_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Lab1_FIR_DUT       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  b1[0] (in)                                              0.00       0.50 f
+  mult_132_G2/b[0] (Lab1_FIR_DUT_DW_mult_tc_29)           0.00       0.50 f
+  mult_132_G2/U262/ZN (INV_X1)                            0.07       0.57 r
+  mult_132_G2/U309/Z (XOR2_X1)                            0.08       0.64 r
+  mult_132_G2/U308/ZN (OAI22_X1)                          0.04       0.68 f
+  mult_132_G2/U56/S (HA_X1)                               0.08       0.76 f
+  mult_132_G2/U248/ZN (INV_X1)                            0.03       0.79 r
+  mult_132_G2/U275/ZN (OAI222_X1)                         0.06       0.85 f
+  mult_132_G2/U274/ZN (AOI222_X1)                         0.11       0.96 r
+  mult_132_G2/U273/ZN (OAI222_X1)                         0.07       1.03 f
+  mult_132_G2/U272/ZN (AOI222_X1)                         0.11       1.14 r
+  mult_132_G2/U271/ZN (OAI222_X1)                         0.07       1.21 f
+  mult_132_G2/U270/ZN (AOI222_X1)                         0.11       1.32 r
+  mult_132_G2/U269/ZN (OAI222_X1)                         0.07       1.39 f
+  mult_132_G2/U268/ZN (AOI222_X1)                         0.11       1.50 r
+  mult_132_G2/U267/ZN (OAI222_X1)                         0.07       1.57 f
+  mult_132_G2/U8/CO (FA_X1)                               0.10       1.66 f
+  mult_132_G2/U7/CO (FA_X1)                               0.09       1.75 f
+  mult_132_G2/U6/CO (FA_X1)                               0.09       1.84 f
+  mult_132_G2/U5/CO (FA_X1)                               0.09       1.93 f
+  mult_132_G2/U4/CO (FA_X1)                               0.09       2.02 f
+  mult_132_G2/U3/CO (FA_X1)                               0.09       2.11 f
+  mult_132_G2/U2/S (FA_X1)                                0.11       2.23 f
+  mult_132_G2/product[18] (Lab1_FIR_DUT_DW_mult_tc_29)
+                                                          0.00       2.23 f
+  add_138_G2/A[6] (Lab1_FIR_DUT_DW01_add_29)              0.00       2.23 f
+  add_138_G2/U1_6/CO (FA_X1)                              0.10       2.33 f
+  add_138_G2/U1_7/S (FA_X1)                               0.13       2.46 r
+  add_138_G2/SUM[7] (Lab1_FIR_DUT_DW01_add_29)            0.00       2.46 r
+  REG_pipe_sum_2/D[7] (REG_N_SIGNED_N8_28)                0.00       2.46 r
+  REG_pipe_sum_2/U17/ZN (NAND2_X1)                        0.03       2.49 f
+  REG_pipe_sum_2/U16/ZN (OAI21_X1)                        0.03       2.52 r
+  REG_pipe_sum_2/Q_reg[7]/D (DFFR_X1)                     0.01       2.53 r
+  data arrival time                                                  2.53
+
+  clock MY_CLK (rise edge)                                9.00       9.00
+  clock network delay (ideal)                             0.00       9.00
+  clock uncertainty                                      -0.07       8.93
+  REG_pipe_sum_2/Q_reg[7]/CK (DFFR_X1)                    0.00       8.93 r
+  library setup time                                     -0.04       8.89
+  data required time                                                 8.89
+  --------------------------------------------------------------------------
+  data required time                                                 8.89
+  data arrival time                                                 -2.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.37
+
+
+1
