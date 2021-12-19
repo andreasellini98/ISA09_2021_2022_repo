@@ -1,0 +1,16 @@
+vcom ./common/unpackfp_unpackfp.vhd
+vcom ./common/packfp_packfp.vhd
+vcom ./common/fpround_fpround.vhd
+vcom ./common/fpnormalize_fpnormalize.vhd
+vcom ./multiplier/fpmul_stage4_struct.vhd
+vcom ./multiplier/fpmul_stage3_struct.vhd
+vcom ./multiplier/fpmul_stage2_struct_pipe.vhd
+vcom ./multiplier/fpmul_stage1_struct.vhd
+vcom ./multiplier/fpmul_pipeline.vhd
+vcom fp_multiplier_tb.vhd
+
+vsim work.fp_multiplier_tb
+
+add wave *
+
+run 1 us
