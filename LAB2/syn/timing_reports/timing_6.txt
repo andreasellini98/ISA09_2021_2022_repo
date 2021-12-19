@@ -1,0 +1,64 @@
+Warning: Design 'FPmul' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Tue Nov 30 11:35:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_EXP_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/EXP_in_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_EXP_reg[0]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_EXP_reg[0]/Q (DFF_X1)                              0.09       0.09 f
+  add_1_root_I2/add_133_2/B[0] (FPmul_DW01_add_2)         0.00       0.09 f
+  add_1_root_I2/add_133_2/U2/ZN (OAI21_X1)                0.04       0.13 r
+  add_1_root_I2/add_133_2/U17/ZN (NAND3_X1)               0.04       0.18 f
+  add_1_root_I2/add_133_2/U22/ZN (NAND2_X1)               0.04       0.22 r
+  add_1_root_I2/add_133_2/U18/ZN (NAND3_X1)               0.04       0.26 f
+  add_1_root_I2/add_133_2/U29/ZN (NAND2_X1)               0.04       0.29 r
+  add_1_root_I2/add_133_2/U7/ZN (NAND3_X1)                0.04       0.33 f
+  add_1_root_I2/add_133_2/U10/ZN (NAND2_X1)               0.03       0.36 r
+  add_1_root_I2/add_133_2/U13/ZN (NAND3_X1)               0.03       0.40 f
+  add_1_root_I2/add_133_2/U1_5/CO (FA_X1)                 0.09       0.49 f
+  add_1_root_I2/add_133_2/U1_6/CO (FA_X1)                 0.09       0.58 f
+  add_1_root_I2/add_133_2/U25/ZN (XNOR2_X1)               0.06       0.63 f
+  add_1_root_I2/add_133_2/SUM[7] (FPmul_DW01_add_2)       0.00       0.63 f
+  U287/ZN (INV_X1)                                        0.02       0.66 r
+  I2/EXP_in_reg[7]/D (DFF_X1)                             0.01       0.67 r
+  data arrival time                                                  0.67
+
+  clock MY_CLK (rise edge)                                0.77       0.77
+  clock network delay (ideal)                             0.00       0.77
+  clock uncertainty                                      -0.07       0.70
+  I2/EXP_in_reg[7]/CK (DFF_X1)                            0.00       0.70 r
+  library setup time                                     -0.03       0.67
+  data required time                                                 0.67
+  --------------------------------------------------------------------------
+  data required time                                                 0.67
+  data arrival time                                                 -0.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
