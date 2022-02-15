@@ -1,0 +1,124 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Wed Feb  9 14:38:11 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: IFID_out_reg_5_
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: PC_Q_reg_31_
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  IFID_out_reg_5_/CK (DFFR_X1)                            0.00 #     0.00 r
+  IFID_out_reg_5_/Q (DFFR_X1)                             0.12       0.12 r
+  immediategenerator_U83/ZN (INV_X1)                      0.03       0.16 f
+  immediategenerator_U101/ZN (AND4_X1)                    0.05       0.20 f
+  immediategenerator_U99/ZN (NOR2_X1)                     0.04       0.25 r
+  immediategenerator_U100/ZN (NAND4_X1)                   0.05       0.30 f
+  immediategenerator_U28/ZN (AND2_X1)                     0.05       0.35 f
+  immediategenerator_U35/ZN (OAI211_X1)                   0.04       0.39 r
+  immediategenerator_U19/ZN (OR2_X1)                      0.06       0.45 r
+  immediategenerator_U37/ZN (NAND2_X1)                    0.04       0.49 f
+  immediategenerator_U108/ZN (AOI22_X1)                   0.06       0.55 r
+  immediategenerator_U65/ZN (OAI221_X1)                   0.06       0.61 f
+  add_290_U117/ZN (NAND2_X1)                              0.05       0.66 r
+  add_290_U118/ZN (NAND3_X1)                              0.04       0.70 f
+  add_290_U162/ZN (NAND2_X1)                              0.03       0.73 r
+  add_290_U143/ZN (NAND3_X1)                              0.04       0.77 f
+  add_290_U167/ZN (NAND2_X1)                              0.04       0.81 r
+  add_290_U58/ZN (NAND3_X1)                               0.04       0.85 f
+  add_290_U54/ZN (NAND2_X1)                               0.03       0.87 r
+  add_290_U57/ZN (NAND3_X1)                               0.04       0.91 f
+  add_290_U1_6/CO (FA_X1)                                 0.10       1.01 f
+  add_290_U85/ZN (NAND2_X1)                               0.04       1.05 r
+  add_290_U87/ZN (NAND3_X1)                               0.04       1.09 f
+  add_290_U32/ZN (NAND2_X1)                               0.04       1.12 r
+  add_290_U13/ZN (NAND3_X1)                               0.04       1.16 f
+  add_290_U139/ZN (NAND2_X1)                              0.04       1.20 r
+  add_290_U47/ZN (NAND3_X1)                               0.04       1.24 f
+  add_290_U150/ZN (NAND2_X1)                              0.04       1.27 r
+  add_290_U146/ZN (NAND3_X1)                              0.04       1.31 f
+  add_290_U156/ZN (NAND2_X1)                              0.04       1.35 r
+  add_290_U158/ZN (NAND3_X1)                              0.04       1.38 f
+  add_290_U103/ZN (NAND2_X1)                              0.04       1.42 r
+  add_290_U21/ZN (NAND3_X1)                               0.04       1.46 f
+  add_290_U77/ZN (NAND2_X1)                               0.04       1.50 r
+  add_290_U80/ZN (NAND3_X1)                               0.04       1.54 f
+  add_290_U189/ZN (NAND2_X1)                              0.04       1.58 r
+  add_290_U171/ZN (NAND3_X1)                              0.04       1.61 f
+  add_290_U201/ZN (NAND2_X1)                              0.03       1.65 r
+  add_290_U203/ZN (NAND3_X1)                              0.04       1.68 f
+  add_290_U121/ZN (NAND2_X1)                              0.04       1.72 r
+  add_290_U25/ZN (NAND3_X1)                               0.04       1.76 f
+  add_290_U224/ZN (NAND2_X1)                              0.04       1.80 r
+  add_290_U227/ZN (NAND3_X1)                              0.04       1.84 f
+  add_290_U128/ZN (NAND2_X1)                              0.04       1.88 r
+  add_290_U41/ZN (NAND3_X1)                               0.04       1.91 f
+  add_290_U206/ZN (NAND2_X1)                              0.04       1.95 r
+  add_290_U39/ZN (NAND3_X1)                               0.04       1.99 f
+  add_290_U72/ZN (NAND2_X1)                               0.03       2.02 r
+  add_290_U18/ZN (NAND3_X1)                               0.04       2.06 f
+  add_290_U91/ZN (NAND2_X1)                               0.03       2.09 r
+  add_290_U50/ZN (NAND3_X1)                               0.04       2.13 f
+  add_290_U98/ZN (NAND2_X1)                               0.04       2.17 r
+  add_290_U40/ZN (NAND3_X1)                               0.04       2.21 f
+  add_290_U65/ZN (NAND2_X1)                               0.04       2.26 r
+  add_290_U68/ZN (NAND3_X1)                               0.04       2.29 f
+  add_290_U134/ZN (NAND2_X1)                              0.03       2.33 r
+  add_290_U136/ZN (NAND3_X1)                              0.04       2.37 f
+  add_290_U178/ZN (NAND2_X1)                              0.04       2.41 r
+  add_290_U173/ZN (NAND3_X1)                              0.04       2.45 f
+  add_290_U184/ZN (NAND2_X1)                              0.04       2.48 r
+  add_290_U185/ZN (NAND3_X1)                              0.04       2.52 f
+  add_290_U213/ZN (NAND2_X1)                              0.04       2.56 r
+  add_290_U144/ZN (NAND3_X1)                              0.04       2.60 f
+  add_290_U219/ZN (NAND2_X1)                              0.04       2.64 r
+  add_290_U221/ZN (NAND3_X1)                              0.04       2.68 f
+  add_290_U111/ZN (NAND2_X1)                              0.03       2.71 r
+  add_290_U113/ZN (NAND3_X1)                              0.04       2.75 f
+  add_290_U195/ZN (NAND2_X1)                              0.03       2.79 r
+  add_290_U197/ZN (NAND3_X1)                              0.03       2.82 f
+  add_290_U51/ZN (XNOR2_X1)                               0.05       2.87 f
+  U1544/ZN (NAND2_X1)                                     0.03       2.90 r
+  U737/ZN (NAND2_X1)                                      0.03       2.93 f
+  PC_U69/ZN (NAND2_X1)                                    0.03       2.95 r
+  PC_U3/ZN (NAND2_X1)                                     0.03       2.98 f
+  PC_Q_reg_31_/D (DFFR_X1)                                0.01       2.99 f
+  data arrival time                                                  2.99
+
+  clock MY_CLK (rise edge)                                3.10       3.10
+  clock network delay (ideal)                             0.00       3.10
+  clock uncertainty                                      -0.07       3.03
+  PC_Q_reg_31_/CK (DFFR_X1)                               0.00       3.03 r
+  library setup time                                     -0.04       2.99
+  data required time                                                 2.99
+  --------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

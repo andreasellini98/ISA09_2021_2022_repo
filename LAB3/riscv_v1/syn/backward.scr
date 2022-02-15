@@ -1,0 +1,9 @@
+read_verilog -netlist ../netlist/riscv_netlist.v
+
+read_saif -verbose -input ../saif/riscv.saif -instance top/dut -unit ns -scale 1
+
+create_clock -name MY_CLK clk
+
+report_power -net -cell -hierarchy > ../netlist/power_backann_netcell.txt
+
+report_power > ../netlist/power_backann.txt

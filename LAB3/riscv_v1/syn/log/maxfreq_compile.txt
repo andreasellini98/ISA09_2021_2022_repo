@@ -1,0 +1,108 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.4 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.4 |     *     |
+============================================================================
+
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'riscv'
+Information: Added key list 'DesignWare' to design 'riscv'. (DDB-72)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'DW_sra'
+  Mapping 'riscv_DW_cmp_0'
+  Processing 'riscv_DW01_add_0'
+  Processing 'riscv_DW01_sub_0'
+  Processing 'riscv_DW01_add_1'
+  Processing 'riscv_DW01_add_2'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:53   17763.7      0.00       0.0    9098.6                          
+    0:01:53   17763.7      0.00       0.0    9098.6                          
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:57   19003.8      0.00       0.0      19.4                          
+    0:02:58   19003.8      0.00       0.0      19.4                          
+    0:02:58   19003.8      0.00       0.0      19.4                          
+    0:02:59   19003.8      0.00       0.0      19.4                          
+    0:03:00   19003.8      0.00       0.0      19.4                          
+    0:03:35   15990.9      0.00       0.0       0.0                          
+    0:03:36   15990.9      0.00       0.0       0.0                          
+    0:03:36   15990.9      0.00       0.0       0.0                          
+    0:03:37   15990.9      0.00       0.0       0.0                          
+    0:03:37   15990.9      0.00       0.0       0.0                          
+    0:03:37   15990.9      0.00       0.0       0.0                          
+    0:03:37   15990.9      0.00       0.0       0.0                          
+    0:03:37   15990.9      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:37   15990.9      0.00       0.0       0.0                          
+    0:03:37   15990.9      0.00       0.0       0.0                          
+    0:03:41   15990.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:41   15990.9      0.00       0.0       0.0                          
+    0:03:41   15990.9      0.00       0.0       0.0                          
+    0:04:18   15948.3      0.00       0.0       0.0                          
+    0:04:24   15927.5      0.00       0.0       0.0                          
+    0:04:28   15908.1      0.00       0.0       0.0                          
+    0:04:29   15906.3      0.00       0.0       0.0                          
+    0:04:30   15905.5      0.00       0.0       0.0                          
+    0:04:30   15905.5      0.00       0.0       0.0                          
+    0:04:31   15905.5      0.00       0.0       0.0                          
+    0:04:32   15894.6      0.00       0.0       0.0                          
+    0:04:33   15894.6      0.00       0.0       0.0                          
+    0:04:33   15894.6      0.00       0.0       0.0                          
+    0:04:33   15894.6      0.00       0.0       0.0                          
+    0:04:33   15894.6      0.00       0.0       0.0                          
+    0:04:33   15894.6      0.00       0.0       0.0                          
+    0:04:34   15894.6      0.00       0.0       0.0                          
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 1613 load(s), 1 driver(s)
+1

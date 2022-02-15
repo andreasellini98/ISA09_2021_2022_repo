@@ -1,0 +1,117 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine riscv line 371 in file
+		'../src/riscv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    IFID_out_reg     | Flip-flop |  96   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine riscv line 399 in file
+		'../src/riscv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    IDEX_out_reg     | Flip-flop |  187  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine riscv line 434 in file
+		'../src/riscv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    EXMEM_out_reg    | Flip-flop |  138  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine riscv line 461 in file
+		'../src/riscv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    MEMWB_out_reg    | Flip-flop |  136  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'riscv'.
+Information: Building the design 'REG32PC'. (HDL-193)
+
+Inferred memory devices in process
+	in routine REG32PC line 16 in file
+		'../src/REG32PC.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        Q_reg        | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'immgen'. (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'../src/immgen.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            26            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'bypass'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterFile'. (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterFile line 29 in file
+		'../src/RF.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     REGout_reg      | Flip-flop | 1024  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| RegisterFile/43  |   32   |   32    |      5       |
+| RegisterFile/44  |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+Information: Building the design 'branchcomp'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'forwardingbranch'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'forwardingunit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'hazardunit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'controlunit'. (HDL-193)
+
+Statistics for case statements in always block at line 26 in file
+	'../src/controlunit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            39            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'aluctrl'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU'. (HDL-193)
+
+Statistics for case statements in always block at line 54 in file
+	'../src/ALU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            64            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+1

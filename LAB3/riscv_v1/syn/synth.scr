@@ -1,0 +1,44 @@
+analyze -f VHDL -lib WORK ../src/branchcomp.vhd
+analyze -f VHDL -lib WORK ../src/bypass.vhd
+analyze -f VHDL -lib WORK ../src/forwardingbranch.vhd
+analyze -f VHDL -lib WORK ../src/forwardingunit.vhd
+analyze -f VHDL -lib WORK ../src/hazardunit.vhd
+analyze -f VHDL -lib WORK ../src/RF.vhd
+analyze -f VHDL -lib WORK ../src/REG32PC.vhd
+analyze -f VHDL -lib WORK ../src/aluctrl.vhd
+analyze -f VHDL -lib WORK ../src/immgen.vhd
+analyze -f VHDL -lib WORK ../src/controlunit.vhd
+analyze -f VHDL -lib WORK ../src/ALU.vhd
+analyze -f VHDL -lib WORK ../src/riscv.vhd
+
+set power_preserve_rtl_hier_names true
+
+elaborate riscv -arch beh -lib WORK > ./log/elaborate.txt
+
+uniquify
+link
+
+create_clock -name MY_CLK -period 12.40 clk
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+compile > ./log/compile.txt
+
+ungroup -all -flatten
+change_names -hierarchy -rules verilog
+
+report_timing > ../netlist/timing.txt
+report_area > ../netlist/area.txt
+report_power > ../netlist/power_preback.txt
+report_resources > ../netlist/resources.txt
+
+write_sdf ../netlist/riscv.sdf
+write_file -f verilog -hierarchy -output ../netlist/riscv_netlist.v  
+write_sdc ../netlist/riscv.sdc
+
+
+

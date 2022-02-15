@@ -1,0 +1,99 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Wed Feb  9 14:47:24 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: EXMEM_out_reg_32_
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: EXMEM_out_reg_100_
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  EXMEM_out_reg_32_/CK (DFFR_X1)           0.00 #     0.00 r
+  EXMEM_out_reg_32_/Q (DFFR_X1)            0.11       0.11 f
+  fwunit_U12/ZN (OR2_X1)                   0.07       0.18 f
+  fwunit_U11/ZN (OR4_X1)                   0.13       0.31 f
+  fwunit_U13/ZN (NAND4_X1)                 0.04       0.35 r
+  fwunit_U1/ZN (NOR4_X1)                   0.03       0.38 f
+  U854/ZN (OR2_X1)                         0.06       0.44 f
+  U741/Z (BUF_X1)                          0.07       0.51 f
+  U754/ZN (NAND2_X1)                       0.05       0.56 r
+  U972/ZN (NOR2_X1)                        0.03       0.59 f
+  U831/Z (BUF_X1)                          0.07       0.66 f
+  U943/ZN (AOI22_X1)                       0.06       0.72 r
+  U941/ZN (OAI211_X1)                      0.06       0.78 f
+  ALUnit_U301/ZN (INV_X1)                  0.06       0.84 r
+  ALUnit_U76/ZN (NOR2_X1)                  0.03       0.87 f
+  ALUnit_add_89_U1/ZN (AND2_X1)            0.05       0.92 f
+  ALUnit_add_89_U1_1/CO (FA_X1)            0.09       1.01 f
+  ALUnit_add_89_U1_2/CO (FA_X1)            0.09       1.10 f
+  ALUnit_add_89_U1_3/CO (FA_X1)            0.09       1.19 f
+  ALUnit_add_89_U1_4/CO (FA_X1)            0.09       1.28 f
+  ALUnit_add_89_U1_5/CO (FA_X1)            0.09       1.37 f
+  ALUnit_add_89_U1_6/CO (FA_X1)            0.09       1.46 f
+  ALUnit_add_89_U1_7/CO (FA_X1)            0.09       1.56 f
+  ALUnit_add_89_U1_8/CO (FA_X1)            0.09       1.65 f
+  ALUnit_add_89_U1_9/CO (FA_X1)            0.09       1.74 f
+  ALUnit_add_89_U1_10/CO (FA_X1)           0.09       1.83 f
+  ALUnit_add_89_U1_11/CO (FA_X1)           0.09       1.92 f
+  ALUnit_add_89_U1_12/CO (FA_X1)           0.09       2.01 f
+  ALUnit_add_89_U1_13/CO (FA_X1)           0.09       2.10 f
+  ALUnit_add_89_U1_14/CO (FA_X1)           0.09       2.19 f
+  ALUnit_add_89_U1_15/CO (FA_X1)           0.09       2.28 f
+  ALUnit_add_89_U1_16/CO (FA_X1)           0.09       2.37 f
+  ALUnit_add_89_U1_17/CO (FA_X1)           0.09       2.46 f
+  ALUnit_add_89_U1_18/CO (FA_X1)           0.09       2.55 f
+  ALUnit_add_89_U1_19/CO (FA_X1)           0.09       2.64 f
+  ALUnit_add_89_U1_20/CO (FA_X1)           0.09       2.73 f
+  ALUnit_add_89_U1_21/CO (FA_X1)           0.09       2.82 f
+  ALUnit_add_89_U1_22/CO (FA_X1)           0.09       2.92 f
+  ALUnit_add_89_U1_23/CO (FA_X1)           0.09       3.01 f
+  ALUnit_add_89_U1_24/CO (FA_X1)           0.09       3.10 f
+  ALUnit_add_89_U1_25/CO (FA_X1)           0.09       3.19 f
+  ALUnit_add_89_U1_26/CO (FA_X1)           0.09       3.28 f
+  ALUnit_add_89_U1_27/CO (FA_X1)           0.09       3.37 f
+  ALUnit_add_89_U1_28/CO (FA_X1)           0.09       3.46 f
+  ALUnit_add_89_U1_29/CO (FA_X1)           0.09       3.55 f
+  ALUnit_add_89_U1_30/CO (FA_X1)           0.09       3.64 f
+  ALUnit_add_89_U1_31/S (FA_X1)            0.11       3.75 f
+  ALUnit_U355/ZN (AOI22_X1)                0.06       3.80 r
+  ALUnit_U353/ZN (NAND2_X1)                0.03       3.83 f
+  EXMEM_out_reg_100_/D (DFFR_X1)           0.01       3.84 f
+  data arrival time                                   3.84
+
+  clock MY_CLK (rise edge)                12.40      12.40
+  clock network delay (ideal)              0.00      12.40
+  clock uncertainty                       -0.07      12.33
+  EXMEM_out_reg_100_/CK (DFFR_X1)          0.00      12.33 r
+  library setup time                      -0.04      12.29
+  data required time                                 12.29
+  -----------------------------------------------------------
+  data required time                                 12.29
+  data arrival time                                  -3.84
+  -----------------------------------------------------------
+  slack (MET)                                         8.45
+
+
+1

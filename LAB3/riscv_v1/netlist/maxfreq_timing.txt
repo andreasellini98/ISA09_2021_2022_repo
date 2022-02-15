@@ -1,0 +1,126 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Wed Feb  2 20:07:56 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: EXMEM_out_reg[32]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: EXMEM_out_reg[100]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  EXMEM_out_reg[32]/CK (DFFR_X1)                          0.00 #     0.00 r
+  EXMEM_out_reg[32]/Q (DFFR_X1)                           0.09       0.09 f
+  U3898/ZN (XNOR2_X1)                                     0.05       0.14 f
+  U9560/ZN (NOR4_X1)                                      0.09       0.23 r
+  U3919/ZN (NAND2_X1)                                     0.04       0.26 f
+  U9491/ZN (AND2_X1)                                      0.05       0.31 f
+  U3847/ZN (NOR2_X1)                                      0.04       0.35 r
+  U3771/ZN (AND2_X1)                                      0.05       0.40 r
+  U9569/ZN (AOI22_X1)                                     0.04       0.44 f
+  U3912/ZN (AND2_X1)                                      0.04       0.48 f
+  U9571/ZN (NOR2_X1)                                      0.03       0.51 r
+  ALUnit/sub_83/B[0] (riscv_DW01_sub_0)                   0.00       0.51 r
+  ALUnit/sub_83/U270/ZN (INV_X1)                          0.03       0.54 f
+  ALUnit/sub_83/U2/ZN (NAND2_X1)                          0.03       0.57 r
+  ALUnit/sub_83/U109/ZN (NAND3_X1)                        0.04       0.60 f
+  ALUnit/sub_83/U2_1/CO (FA_X1)                           0.10       0.70 f
+  ALUnit/sub_83/U129/ZN (NAND2_X1)                        0.04       0.74 r
+  ALUnit/sub_83/U124/ZN (NAND3_X1)                        0.04       0.78 f
+  ALUnit/sub_83/U135/ZN (NAND2_X1)                        0.03       0.81 r
+  ALUnit/sub_83/U137/ZN (NAND3_X1)                        0.04       0.85 f
+  ALUnit/sub_83/U114/ZN (NAND2_X1)                        0.04       0.89 r
+  ALUnit/sub_83/U50/ZN (NAND3_X1)                         0.04       0.93 f
+  ALUnit/sub_83/U15/ZN (NAND2_X1)                         0.04       0.97 r
+  ALUnit/sub_83/U33/ZN (NAND3_X1)                         0.03       1.00 f
+  ALUnit/sub_83/U77/ZN (NAND2_X1)                         0.03       1.03 r
+  ALUnit/sub_83/U79/ZN (NAND3_X1)                         0.04       1.07 f
+  ALUnit/sub_83/U160/ZN (NAND2_X1)                        0.04       1.10 r
+  ALUnit/sub_83/U142/ZN (NAND3_X1)                        0.04       1.14 f
+  ALUnit/sub_83/U176/ZN (NAND2_X1)                        0.04       1.18 r
+  ALUnit/sub_83/U177/ZN (NAND3_X1)                        0.04       1.22 f
+  ALUnit/sub_83/U182/ZN (NAND2_X1)                        0.03       1.25 r
+  ALUnit/sub_83/U163/ZN (NAND3_X1)                        0.04       1.29 f
+  ALUnit/sub_83/U217/ZN (NAND2_X1)                        0.04       1.33 r
+  ALUnit/sub_83/U29/ZN (NAND3_X1)                         0.04       1.36 f
+  ALUnit/sub_83/U61/ZN (NAND2_X1)                         0.04       1.40 r
+  ALUnit/sub_83/U31/ZN (NAND3_X1)                         0.04       1.44 f
+  ALUnit/sub_83/U71/ZN (NAND2_X1)                         0.03       1.47 r
+  ALUnit/sub_83/U14/ZN (NAND3_X1)                         0.04       1.51 f
+  ALUnit/sub_83/U54/ZN (NAND2_X1)                         0.04       1.54 r
+  ALUnit/sub_83/U57/ZN (NAND3_X1)                         0.04       1.58 f
+  ALUnit/sub_83/U235/ZN (NAND2_X1)                        0.03       1.61 r
+  ALUnit/sub_83/U238/ZN (NAND3_X1)                        0.03       1.64 f
+  ALUnit/sub_83/U2_15/CO (FA_X1)                          0.10       1.74 f
+  ALUnit/sub_83/U94/ZN (NAND2_X1)                         0.04       1.78 r
+  ALUnit/sub_83/U81/ZN (NAND3_X1)                         0.04       1.82 f
+  ALUnit/sub_83/U200/ZN (NAND2_X1)                        0.04       1.85 r
+  ALUnit/sub_83/U202/ZN (NAND3_X1)                        0.04       1.89 f
+  ALUnit/sub_83/U149/ZN (NAND2_X1)                        0.04       1.92 r
+  ALUnit/sub_83/U80/ZN (NAND3_X1)                         0.04       1.96 f
+  ALUnit/sub_83/U169/ZN (NAND2_X1)                        0.03       1.99 r
+  ALUnit/sub_83/U171/ZN (NAND3_X1)                        0.03       2.02 f
+  ALUnit/sub_83/U2_20/CO (FA_X1)                          0.10       2.12 f
+  ALUnit/sub_83/U207/ZN (NAND2_X1)                        0.04       2.16 r
+  ALUnit/sub_83/U208/ZN (NAND3_X1)                        0.04       2.20 f
+  ALUnit/sub_83/U213/ZN (NAND2_X1)                        0.03       2.23 r
+  ALUnit/sub_83/U16/ZN (NAND3_X1)                         0.04       2.27 f
+  ALUnit/sub_83/U44/ZN (NAND2_X1)                         0.04       2.31 r
+  ALUnit/sub_83/U17/ZN (NAND3_X1)                         0.04       2.34 f
+  ALUnit/sub_83/U225/ZN (NAND2_X1)                        0.04       2.38 r
+  ALUnit/sub_83/U226/ZN (NAND3_X1)                        0.04       2.42 f
+  ALUnit/sub_83/U231/ZN (NAND2_X1)                        0.04       2.46 r
+  ALUnit/sub_83/U232/ZN (NAND3_X1)                        0.04       2.49 f
+  ALUnit/sub_83/U85/ZN (NAND2_X1)                         0.03       2.53 r
+  ALUnit/sub_83/U51/ZN (NAND3_X1)                         0.04       2.57 f
+  ALUnit/sub_83/U101/ZN (NAND2_X1)                        0.04       2.60 r
+  ALUnit/sub_83/U103/ZN (NAND3_X1)                        0.04       2.64 f
+  ALUnit/sub_83/U155/ZN (NAND2_X1)                        0.04       2.68 r
+  ALUnit/sub_83/U157/ZN (NAND3_X1)                        0.04       2.71 f
+  ALUnit/sub_83/U190/ZN (NAND2_X1)                        0.04       2.75 r
+  ALUnit/sub_83/U191/ZN (NAND3_X1)                        0.04       2.79 f
+  ALUnit/sub_83/U195/ZN (NAND2_X1)                        0.03       2.82 r
+  ALUnit/sub_83/U19/ZN (NAND3_X1)                         0.03       2.85 f
+  ALUnit/sub_83/U18/ZN (XNOR2_X1)                         0.05       2.91 f
+  ALUnit/sub_83/DIFF[31] (riscv_DW01_sub_0)               0.00       2.91 f
+  U9563/ZN (AOI22_X1)                                     0.04       2.95 r
+  U9572/ZN (NAND2_X1)                                     0.03       2.98 f
+  EXMEM_out_reg[100]/D (DFFR_X1)                          0.01       2.99 f
+  data arrival time                                                  2.99
+
+  clock MY_CLK (rise edge)                                3.10       3.10
+  clock network delay (ideal)                             0.00       3.10
+  clock uncertainty                                      -0.07       3.03
+  EXMEM_out_reg[100]/CK (DFFR_X1)                         0.00       3.03 r
+  library setup time                                     -0.04       2.99
+  data required time                                                 2.99
+  --------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
