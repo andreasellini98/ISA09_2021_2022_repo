@@ -1,0 +1,6 @@
+../src/32-bit_DADDA/Half_Adder.vhd
+../src/32-bit_DADDA/Full_Adder.vhd
+../src/32-bit_DADDA/MBE.vhd
+../src/32-bit_DADDA/ks_adder.vhd
+../src/32-bit_DADDA/dadda.vhd
+

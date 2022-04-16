@@ -1,0 +1,15 @@
+vcom ../src/Half_Adder.vhd
+vcom ../src/Full_Adder.vhd
+vcom ../src/MBE.vhd
+vcom ../src/ks_adder.vhd
+vcom ../src/dadda.vhd
+vcom ../src/common/unpackfp_unpackfp.vhd
+vcom ../src/common/packfp_packfp.vhd
+vcom ../src/common/fpround_fpround.vhd
+vcom ../src/common/fpnormalize_fpnormalize.vhd
+vcom ../src/fp_multiplier/fpmul_stage4_struct.vhd
+vcom ../src/fp_multiplier/fpmul_stage3_struct.vhd
+vcom ../src/fp_multiplier/fpmul_stage2_struct_pipe_MBE.vhd
+vcom ../src/fp_multiplier/fpmul_stage1_struct.vhd
+vcom ../src/fp_multiplier/fpmul_pipeline.vhd
+

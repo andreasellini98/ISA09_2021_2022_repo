@@ -1,0 +1,793 @@
+# vsim top "+define+DADDA" "+define+MISCOMPARE" -batch -do "run -all; quit -f" 
+# Start time: 19:53:03 on Apr 10,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../tb/monitor.sv(49): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# ** Warning: ../tb/monitor_out.sv(48): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.dut_if(fast)
+# Loading work.DUT(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.dut_if(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.dadda(struct)#1
+# Loading work.mbe(beh)#1
+# Loading work.ks_adder(ks)#1
+# Loading work.half_adder(structural)#1
+# Loading work.full_adder(behaviour)#1
+# ** Warning: (vsim-3764) Stand-alone call to function 'begin_tr' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::driver File: ../tb/driver.sv Line: 67
+# Loading /software/mentor/questa10.7c/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# 
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test simple_test...
+# Dadda: input A =  731014105, input B =  175121917, output OUT =   128016591421639285
+# Dadda: input A = 00101011100100100110001111011001, input B = 00001010011100000010010111111101, output OUT = 0000000111000110110011100110100101100001000010110000101001110101
+# refmod: input A =   731014105, input B =   175121917, output OUT =             555892188
+# refmod: input A = 00101011100100100110001111011001, input B = 00001010011100000010010111111101, output OUT = 0000000000000000000000000000000000100001001000100011110111011100
+# UVM_INFO @ 45: reporter [MISCMP] Miscompare for exp.data: lhs = 'h21223ddc : rhs = 'h1c6ce69610b0a75
+# UVM_INFO @ 45: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 45: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =   80379531, input B =  554858996, output OUT =    44599305869610876
+# Dadda: input A = 00000100110010100111111010001011, input B = 00100001000100100111100111110100, output OUT = 0000000010011110011100101101010100010111100101100100111101111100
+# refmod: input A =    80379531, input B =   554858996, output OUT =            -474479465
+# refmod: input A = 00000100110010100111111010001011, input B = 00100001000100100111100111110100, output OUT = 1111111111111111111111111111111111100011101110000000010010010111
+# UVM_INFO @ 75: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffe3b80497 : rhs = 'h9e72d517964f7c
+# UVM_INFO @ 75: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 75: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  260878708, input B = 1665468698, output OUT =   434485322148682184
+# Dadda: input A = 00001111100011001011000101110100, input B = 01100011010001010000100100011010, output OUT = 0000011000000111100110100001100100110110110010110001100111001000
+# refmod: input A =   260878708, input B =  1665468698, output OUT =           -1404589990
+# refmod: input A = 00001111100011001011000101110100, input B = 01100011010001010000100100011010, output OUT = 1111111111111111111111111111111110101100010001111010100001011010
+# UVM_INFO @ 105: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffac47a85a : rhs = 'h6079a1936cb19c8
+# UVM_INFO @ 105: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 105: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 2117138060, input B = 1952321135, output OUT =  4133333380250898100
+# Dadda: input A = 01111110001100001111011010001100, input B = 01110100010111100000111001101111, output OUT = 0011100101011100100011001100111101011100000111101000111010110100
+# refmod: input A =  2117138060, input B =  1952321135, output OUT =             164816925
+# refmod: input A = 01111110001100001111011010001100, input B = 01110100010111100000111001101111, output OUT = 0000000000000000000000000000000000001001110100101110100000011101
+# UVM_INFO @ 135: reporter [MISCMP] Miscompare for exp.data: lhs = 'h9d2e81d : rhs = 'h395c8ccf5c1e8eb4
+# UVM_INFO @ 135: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 135: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  534645071, input B = 1568245229, output OUT =   838454581804116259
+# Dadda: input A = 00011111110111100000100101001111, input B = 01011101011110011000010111101101, output OUT = 0000101110100010110010011111111111110100101110111010100100100011
+# refmod: input A =   534645071, input B =  1568245229, output OUT =           -1033600158
+# refmod: input A = 00011111110111100000100101001111, input B = 01011101011110011000010111101101, output OUT = 1111111111111111111111111111111111000010011001001000001101100010
+# UVM_INFO @ 165: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffc2648362 : rhs = 'hba2c9fff4bba923
+# UVM_INFO @ 165: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 165: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  140412694, input B = 1111608308, output OUT =   156083917199061752
+# Dadda: input A = 00001000010111101000011100010110, input B = 01000010010000011100101111110100, output OUT = 0000001000101010100001010111111011100111110011010011001011111000
+# refmod: input A =   140412694, input B =  1111608308, output OUT =            -971195614
+# refmod: input A = 00001000010111101000011100010110, input B = 01000010010000011100101111110100, output OUT = 1111111111111111111111111111111111000110000111001011101100100010
+# UVM_INFO @ 195: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffc61cbb22 : rhs = 'h22a857ee7cd32f8
+# UVM_INFO @ 195: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 195: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1613751131, input B = 1799801805, output OUT =  2904432198394591455
+# Dadda: input A = 01100000001011111110001101011011, input B = 01101011010001101100101111001101, output OUT = 0010100001001110100111011011001000110011100001000011100011011111
+# refmod: input A =  1613751131, input B =  1799801805, output OUT =            -186050674
+# refmod: input A = 01100000001011111110001101011011, input B = 01101011010001101100101111001101, output OUT = 1111111111111111111111111111111111110100111010010001011110001110
+# UVM_INFO @ 225: reporter [MISCMP] Miscompare for exp.data: lhs = 'hfffffffff4e9178e : rhs = 'h284e9db2338438df
+# UVM_INFO @ 225: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 225: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  383892865, input B = 1223760944, output OUT =   469793094867264560
+# Dadda: input A = 00010110111000011011110110000001, input B = 01001000111100010001110000110000, output OUT = 0000011010000101000010100101010010101001011111101010010000110000
+# refmod: input A =   383892865, input B =  1223760944, output OUT =            -839868079
+# refmod: input A = 00010110111000011011110110000001, input B = 01001000111100010001110000110000, output OUT = 1111111111111111111111111111111111001101111100001010000101010001
+# UVM_INFO @ 255: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffcdf0a151 : rhs = 'h6850a54a97ea430
+# UVM_INFO @ 255: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 255: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1725197148, input B = 1315262525, output OUT =  2269087157001278700
+# Dadda: input A = 01100110110101000110101101011100, input B = 01001110011001010101000000111101, output OUT = 0001111101111101011010101011111101000101011101100101010011101100
+# refmod: input A =  1725197148, input B =  1315262525, output OUT =             409934623
+# refmod: input A = 01100110110101000110101101011100, input B = 01001110011001010101000000111101, output OUT = 0000000000000000000000000000000000011000011011110001101100011111
+# UVM_INFO @ 285: reporter [MISCMP] Miscompare for exp.data: lhs = 'h186f1b1f : rhs = 'h1f7d6abf457654ec
+# UVM_INFO @ 285: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 285: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  225746596, input B =  790780233, output OUT =   178515945783836868
+# Dadda: input A = 00001101011101001001111010100100, input B = 00101111001000100101100101001001, output OUT = 0000001001111010001101110100111010001111001100000100000011000100
+# refmod: input A =   225746596, input B =   790780233, output OUT =            -565033637
+# refmod: input A = 00001101011101001001111010100100, input B = 00101111001000100101100101001001, output OUT = 1111111111111111111111111111111111011110010100100100010101011011
+# UVM_INFO @ 315: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffde52455b : rhs = 'h27a374e8f3040c4
+# UVM_INFO @ 315: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 315: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1541776121, input B = 1428688626, output OUT =  2202718007911099746
+# Dadda: input A = 01011011111001011010001011111001, input B = 01010101001010000000111011110010, output OUT = 0001111010010001101000000101101110010001111001011010110101100010
+# refmod: input A =  1541776121, input B =  1428688626, output OUT =             113087495
+# refmod: input A = 01011011111001011010001011111001, input B = 01010101001010000000111011110010, output OUT = 0000000000000000000000000000000000000110101111011001010000000111
+# UVM_INFO @ 345: reporter [MISCMP] Miscompare for exp.data: lhs = 'h6bd9407 : rhs = 'h1e91a05b91e5ad62
+# UVM_INFO @ 345: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 345: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1246460781, input B = 1569374088, output OUT =  1956163251409642728
+# Dadda: input A = 01001010010010110111101101101101, input B = 01011101100010101011111110001000, output OUT = 0001101100100101101100000001110011101010111100011110010011101000
+# refmod: input A =  1246460781, input B =  1569374088, output OUT =            -322913307
+# refmod: input A = 01001010010010110111101101101101, input B = 01011101100010101011111110001000, output OUT = 1111111111111111111111111111111111101100110000001011101111100101
+# UVM_INFO @ 375: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffecc0bbe5 : rhs = 'h1b25b01ceaf1e4e8
+# UVM_INFO @ 375: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 375: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1712994403, input B =  601358051, output OUT =  1030122975561988553
+# Dadda: input A = 01100110000110100011100001100011, input B = 00100011110101111111111011100011, output OUT = 0000111001001011101110110110001101110001010101110011100111001001
+# refmod: input A =  1712994403, input B =   601358051, output OUT =            1111636352
+# refmod: input A = 01100110000110100011100001100011, input B = 00100011110101111111111011100011, output OUT = 0000000000000000000000000000000001000010010000100011100110000000
+# UVM_INFO @ 405: reporter [MISCMP] Miscompare for exp.data: lhs = 'h42423980 : rhs = 'he4bbb63715739c9
+# UVM_INFO @ 405: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 405: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1399840739, input B =  350842963, output OUT =   491124272598869657
+# Dadda: input A = 01010011011011111101111111100011, input B = 00010100111010010111000001010011, output OUT = 0000011011010000110100101110110010000000110100111110011010011001
+# refmod: input A =  1399840739, input B =   350842963, output OUT =            1048997776
+# refmod: input A = 01010011011011111101111111100011, input B = 00010100111010010111000001010011, output OUT = 0000000000000000000000000000000000111110100001100110111110010000
+# UVM_INFO @ 435: reporter [MISCMP] Miscompare for exp.data: lhs = 'h3e866f90 : rhs = 'h6d0d2ec80d3e699
+# UVM_INFO @ 435: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 435: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =   91952929, input B = 1965175865, output OUT =   180703676786858585
+# Dadda: input A = 00000101011110110001011100100001, input B = 01110101001000100011010000111001, output OUT = 0000001010000001111111010000100101100000011111001101101001011001
+# refmod: input A =    91952929, input B =  1965175865, output OUT =           -1873222936
+# refmod: input A = 00000101011110110001011100100001, input B = 01110101001000100011010000111001, output OUT = 1111111111111111111111111111111110010000010110001110001011101000
+# UVM_INFO @ 465: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffff9058e2e8 : rhs = 'h281fd09607cda59
+# UVM_INFO @ 465: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 465: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  925443358, input B =  460769222, output OUT =   426415816070727476
+# Dadda: input A = 00110111001010010010010100011110, input B = 00011011011101101100011111000110, output OUT = 0000010111101010111011101110110011101011100000010000011100110100
+# refmod: input A =   925443358, input B =   460769222, output OUT =             464674136
+# refmod: input A = 00110111001010010010010100011110, input B = 00011011011101101100011111000110, output OUT = 0000000000000000000000000000000000011011101100100101110101011000
+# UVM_INFO @ 495: reporter [MISCMP] Miscompare for exp.data: lhs = 'h1bb25d58 : rhs = 'h5eaeeeceb810734
+# UVM_INFO @ 495: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 495: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  876184097, input B =  614306907, output OUT =   538245942590657979
+# Dadda: input A = 00110100001110011000001000100001, input B = 00100100100111011001010001011011, output OUT = 0000011101111000001110111101010101000001111010010101010110111011
+# refmod: input A =   876184097, input B =   614306907, output OUT =             261877190
+# refmod: input A = 00110100001110011000001000100001, input B = 00100100100111011001010001011011, output OUT = 0000000000000000000000000000000000001111100110111110110111000110
+# UVM_INFO @ 525: reporter [MISCMP] Miscompare for exp.data: lhs = 'hf9bedc6 : rhs = 'h7783bd541e955bb
+# UVM_INFO @ 525: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 525: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1568767450, input B = 1075088082, output OUT =  1686563188924530900
+# Dadda: input A = 01011101100000010111110111011010, input B = 01000000000101001000101011010010, output OUT = 0001011101100111111000000100100011010111000110001100000011010100
+# refmod: input A =  1568767450, input B =  1075088082, output OUT =             493679368
+# refmod: input A = 01011101100000010111110111011010, input B = 01000000000101001000101011010010, output OUT = 0000000000000000000000000000000000011101011011001111001100001000
+# UVM_INFO @ 555: reporter [MISCMP] Miscompare for exp.data: lhs = 'h1d6cf308 : rhs = 'h1767e048d718c0d4
+# UVM_INFO @ 555: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 555: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1678953407, input B =  444558830, output OUT =   746393562240433810
+# Dadda: input A = 01100100000100101100101110111111, input B = 00011010011111110110110111101110, output OUT = 0000101001011011101110001111110110000011111110101011111010010010
+# refmod: input A =  1678953407, input B =   444558830, output OUT =            1234394577
+# refmod: input A = 01100100000100101100101110111111, input B = 00011010011111110110110111101110, output OUT = 0000000000000000000000000000000001001001100100110101110111010001
+# UVM_INFO @ 585: reporter [MISCMP] Miscompare for exp.data: lhs = 'h49935dd1 : rhs = 'ha5bb8fd83fabe92
+# UVM_INFO @ 585: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 585: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1221817855, input B = 2011566019, output OUT =  2457767278525469245
+# Dadda: input A = 01001000110100110111010111111111, input B = 01110111111001100000111111000011, output OUT = 0010001000011011101111100101000101101001000101101101001000111101
+# refmod: input A =  1221817855, input B =  2011566019, output OUT =            -789748164
+# refmod: input A = 01001000110100110111010111111111, input B = 01110111111001100000111111000011, output OUT = 1111111111111111111111111111111111010000111011010110011000111100
+# UVM_INFO @ 615: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd0ed663c : rhs = 'h221bbe516916d23d
+# UVM_INFO @ 615: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 615: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  483247761, input B =   42791131, output OUT =    20678718246407691
+# Dadda: input A = 00011100110011011100011010010001, input B = 00000010100011001111000011011011, output OUT = 0000000001001001011101110010111101000111011111001100111000001011
+# refmod: input A =   483247761, input B =    42791131, output OUT =             440456630
+# refmod: input A = 00011100110011011100011010010001, input B = 00000010100011001111000011011011, output OUT = 0000000000000000000000000000000000011010010000001101010110110110
+# UVM_INFO @ 645: reporter [MISCMP] Miscompare for exp.data: lhs = 'h1a40d5b6 : rhs = 'h49772f477cce0b
+# UVM_INFO @ 645: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 645: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  459354219, input B = 1329403142, output OUT =   610666942029556098
+# Dadda: input A = 00011011011000010011000001101011, input B = 01001111001111010001010100000110, output OUT = 0000100001111001100001100101100100101011101111101110100110000010
+# refmod: input A =   459354219, input B =  1329403142, output OUT =            -870048923
+# refmod: input A = 00011011011000010011000001101011, input B = 01001111001111010001010100000110, output OUT = 1111111111111111111111111111111111001100001001000001101101100101
+# UVM_INFO @ 675: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffcc241b65 : rhs = 'h87986592bbee982
+# UVM_INFO @ 675: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 675: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1266089797, input B = 2073383015, output OUT =  2625089080564597955
+# Dadda: input A = 01001011011101101111111101000101, input B = 01111011100101010101000001100111, output OUT = 0010010001101110001100001001110001000110110011110100010011000011
+# refmod: input A =  1266089797, input B =  2073383015, output OUT =            -807293218
+# refmod: input A = 01001011011101101111111101000101, input B = 01111011100101010101000001100111, output OUT = 1111111111111111111111111111111111001111111000011010111011011110
+# UVM_INFO @ 705: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffcfe1aede : rhs = 'h246e309c46cf44c3
+# UVM_INFO @ 705: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 705: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  652409171, input B = 1668989895, output OUT =  1088864313804327045
+# Dadda: input A = 00100110111000101111100101010011, input B = 01100011011110101100001111000111, output OUT = 0000111100011100011011000101001100001000111010000000100010000101
+# refmod: input A =   652409171, input B =  1668989895, output OUT =           -1016580724
+# refmod: input A = 00100110111000101111100101010011, input B = 01100011011110101100001111000111, output OUT = 1111111111111111111111111111111111000011011010000011010110001100
+# UVM_INFO @ 735: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffc368358c : rhs = 'hf1c6c5308e80885
+# UVM_INFO @ 735: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 735: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  890816111, input B = 1746323356, output OUT =  1555652980540388516
+# Dadda: input A = 00110101000110001100011001101111, input B = 01101000000101101100011110011100, output OUT = 0001010110010110110010100010010011000010111000110011010010100100
+# refmod: input A =   890816111, input B =  1746323356, output OUT =            -855507245
+# refmod: input A = 00110101000110001100011001101111, input B = 01101000000101101100011110011100, output OUT = 1111111111111111111111111111111111001101000000011111111011010011
+# UVM_INFO @ 765: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffcd01fed3 : rhs = 'h1596ca24c2e334a4
+# UVM_INFO @ 765: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 765: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1778436677, input B =  206073382, output OUT =   366488460702231614
+# Dadda: input A = 01101010000000001100101001000101, input B = 00001100010010000110111000100110, output OUT = 0000010100010110000001110101000000110010011011111010110000111110
+# refmod: input A =  1778436677, input B =   206073382, output OUT =            1572363295
+# refmod: input A = 01101010000000001100101001000101, input B = 00001100010010000110111000100110, output OUT = 0000000000000000000000000000000001011101101110000101110000011111
+# UVM_INFO @ 795: reporter [MISCMP] Miscompare for exp.data: lhs = 'h5db85c1f : rhs = 'h5160750326fac3e
+# UVM_INFO @ 795: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 795: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  940084422, input B =  357238882, output OUT =   335834707900896204
+# Dadda: input A = 00111000000010001000110011000110, input B = 00010101010010110000100001100010, output OUT = 0000010010101001000111111110001100110011101011100001001111001100
+# refmod: input A =   940084422, input B =   357238882, output OUT =             582845540
+# refmod: input A = 00111000000010001000110011000110, input B = 00010101010010110000100001100010, output OUT = 0000000000000000000000000000000000100010101111011000010001100100
+# UVM_INFO @ 825: reporter [MISCMP] Miscompare for exp.data: lhs = 'h22bd8464 : rhs = 'h4a91fe333ae13cc
+# UVM_INFO @ 825: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 825: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1766121974, input B = 1385076643, output OUT =  2446214294876453282
+# Dadda: input A = 01101001010001001110000111110110, input B = 01010010100011101001011110100011, output OUT = 0010000111110010101100101111000011001010100101111111100110100010
+# refmod: input A =  1766121974, input B =  1385076643, output OUT =             381045331
+# refmod: input A = 01101001010001001110000111110110, input B = 01010010100011101001011110100011, output OUT = 0000000000000000000000000000000000010110101101100100101001010011
+# UVM_INFO @ 855: reporter [MISCMP] Miscompare for exp.data: lhs = 'h16b64a53 : rhs = 'h21f2b2f0ca97f9a2
+# UVM_INFO @ 855: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 855: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 2067343682, input B =  977174398, output OUT =  2020155317917453436
+# Dadda: input A = 01111011001110010010100101000010, input B = 00111010001111100111111101111110, output OUT = 0001110000001001000010001000111011110011100101100000110001111100
+# refmod: input A =  2067343682, input B =   977174398, output OUT =            1090169284
+# refmod: input A = 01111011001110010010100101000010, input B = 00111010001111100111111101111110, output OUT = 0000000000000000000000000000000001000000111110101010100111000100
+# UVM_INFO @ 885: reporter [MISCMP] Miscompare for exp.data: lhs = 'h40faa9c4 : rhs = 'h1c09088ef3960c7c
+# UVM_INFO @ 885: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 885: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  378808866, input B = 1032434645, output OUT =   391095397091562570
+# Dadda: input A = 00010110100101000010101000100010, input B = 00111101100010011011001111010101, output OUT = 0000010101101101011100110011000100001000111011101101010001001010
+# refmod: input A =   378808866, input B =  1032434645, output OUT =            -653625779
+# refmod: input A = 00010110100101000010101000100010, input B = 00111101100010011011001111010101, output OUT = 1111111111111111111111111111111111011001000010100111011001001101
+# UVM_INFO @ 915: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd90a764d : rhs = 'h56d733108eed44a
+# UVM_INFO @ 915: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 915: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1977803549, input B =  108385716, output OUT =   214365653765706084
+# Dadda: input A = 01110101111000101110001100011101, input B = 00000110011101011101010110110100, output OUT = 0000001011111001100101000110110100100100101111111101000101100100
+# refmod: input A =  1977803549, input B =   108385716, output OUT =            1869417833
+# refmod: input A = 01110101111000101110001100011101, input B = 00000110011101011101010110110100, output OUT = 0000000000000000000000000000000001101111011011010000110101101001
+# UVM_INFO @ 945: reporter [MISCMP] Miscompare for exp.data: lhs = 'h6f6d0d69 : rhs = 'h2f9946d24bfd164
+# UVM_INFO @ 945: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 945: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  785484068, input B = 1146585647, output OUT =   900624758315971996
+# Dadda: input A = 00101110110100011000100100100100, input B = 01000100010101111000001000101111, output OUT = 0000110001111111101010010111001000101011010110000111010110011100
+# refmod: input A =   785484068, input B =  1146585647, output OUT =            -361101579
+# refmod: input A = 00101110110100011000100100100100, input B = 01000100010101111000001000101111, output OUT = 1111111111111111111111111111111111101010011110100000011011110101
+# UVM_INFO @ 975: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffea7a06f5 : rhs = 'hc7fa9722b58759c
+# UVM_INFO @ 975: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 975: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  913974563, input B =  690282282, output OUT =   630900447037592766
+# Dadda: input A = 00110110011110100010010100100011, input B = 00101001001001001101111100101010, output OUT = 0000100011000001011010001001110100101010010011111001010010111110
+# refmod: input A =   913974563, input B =   690282282, output OUT =             223692281
+# refmod: input A = 00110110011110100010010100100011, input B = 00101001001001001101111100101010, output OUT = 0000000000000000000000000000000000001101010101010100010111111001
+# UVM_INFO @ 1005: reporter [MISCMP] Miscompare for exp.data: lhs = 'hd5545f9 : rhs = 'h8c1689d2a4f94be
+# UVM_INFO @ 1005: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1005: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1544876891, input B = 1738059493, output OUT =  2685087945918876263
+# Dadda: input A = 01011100000101001111001101011011, input B = 01100111100110001010111011100101, output OUT = 0010010101000011010110010100001010110111001011011000101001100111
+# refmod: input A =  1544876891, input B =  1738059493, output OUT =            -193182602
+# refmod: input A = 01011100000101001111001101011011, input B = 01100111100110001010111011100101, output OUT = 1111111111111111111111111111111111110100011111000100010001110110
+# UVM_INFO @ 1035: reporter [MISCMP] Miscompare for exp.data: lhs = 'hfffffffff47c4476 : rhs = 'h25435942b72d8a67
+# UVM_INFO @ 1035: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1035: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1961337323, input B =  556136144, output OUT =  1090770575896502512
+# Dadda: input A = 01110100111001111010000111101011, input B = 00100001001001011111011011010000, output OUT = 0000111100100011001100100000111101000011110000100110000011110000
+# refmod: input A =  1961337323, input B =   556136144, output OUT =            1405201179
+# refmod: input A = 01110100111001111010000111101011, input B = 00100001001001011111011011010000, output OUT = 0000000000000000000000000000000001010011110000011010101100011011
+# UVM_INFO @ 1065: reporter [MISCMP] Miscompare for exp.data: lhs = 'h53c1ab1b : rhs = 'hf23320f43c260f0
+# UVM_INFO @ 1065: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1065: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1727143128, input B =  724064169, output OUT =  1250562453719380632
+# Dadda: input A = 01100110111100100001110011011000, input B = 00101011001010000101011110101001, output OUT = 0001000101011010111000111110110100000111011000100111001010011000
+# refmod: input A =  1727143128, input B =   724064169, output OUT =            1003078959
+# refmod: input A = 01100110111100100001110011011000, input B = 00101011001010000101011110101001, output OUT = 0000000000000000000000000000000000111011110010011100010100101111
+# UVM_INFO @ 1095: reporter [MISCMP] Miscompare for exp.data: lhs = 'h3bc9c52f : rhs = 'h115ae3ed07627298
+# UVM_INFO @ 1095: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1095: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  246654637, input B = 1595147461, output OUT =   393450517954426657
+# Dadda: input A = 00001110101100111010011010101101, input B = 01011111000101000000010011000101, output OUT = 0000010101110101110100010010100101010111010111011111011100100001
+# refmod: input A =   246654637, input B =  1595147461, output OUT =           -1348492824
+# refmod: input A = 00001110101100111010011010101101, input B = 01011111000101000000010011000101, output OUT = 1111111111111111111111111111111110101111100111111010000111101000
+# UVM_INFO @ 1125: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffaf9fa1e8 : rhs = 'h575d129575df721
+# UVM_INFO @ 1125: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1125: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1646293169, input B = 1054092443, output OUT =  1735345188405421867
+# Dadda: input A = 01100010001000000111000010110001, input B = 00111110110101000010110010011011, output OUT = 0001100000010101001011110100000100101101100101101010011100101011
+# refmod: input A =  1646293169, input B =  1054092443, output OUT =             592200726
+# refmod: input A = 01100010001000000111000010110001, input B = 00111110110101000010110010011011, output OUT = 0000000000000000000000000000000000100011010011000100010000010110
+# UVM_INFO @ 1155: reporter [MISCMP] Miscompare for exp.data: lhs = 'h234c4416 : rhs = 'h18152f412d96a72b
+# UVM_INFO @ 1155: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1155: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1801400708, input B = 1247084803, output OUT =  2246499447060240524
+# Dadda: input A = 01101011010111110011000110000100, input B = 01001010010101010000000100000011, output OUT = 0001111100101101001010110101100000111010001000110001100010001100
+# refmod: input A =  1801400708, input B =  1247084803, output OUT =             554315905
+# refmod: input A = 01101011010111110011000110000100, input B = 01001010010101010000000100000011, output OUT = 0000000000000000000000000000000000100001000010100011000010000001
+# UVM_INFO @ 1185: reporter [MISCMP] Miscompare for exp.data: lhs = 'h210a3081 : rhs = 'h1f2d2b583a23188c
+# UVM_INFO @ 1185: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1185: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1637527070, input B =  818587330, output OUT =  1340458912034023100
+# Dadda: input A = 01100001100110101010111000011110, input B = 00110000110010101010011011000010, output OUT = 0001001010011010010001000100011101000111110010110110011010111100
+# refmod: input A =  1637527070, input B =   818587330, output OUT =             818939740
+# refmod: input A = 01100001100110101010111000011110, input B = 00110000110010101010011011000010, output OUT = 0000000000000000000000000000000000110000110100000000011101011100
+# UVM_INFO @ 1215: reporter [MISCMP] Miscompare for exp.data: lhs = 'h30d0075c : rhs = 'h129a444747cb66bc
+# UVM_INFO @ 1215: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1215: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  268764860, input B =   55086148, output OUT =    14805220855159280
+# Dadda: input A = 00010000000001010000011010111100, input B = 00000011010010001000110001000100, output OUT = 0000000000110100100110010100010100011001111001001001100111110000
+# refmod: input A =   268764860, input B =    55086148, output OUT =             213678712
+# refmod: input A = 00010000000001010000011010111100, input B = 00000011010010001000110001000100, output OUT = 0000000000000000000000000000000000001100101111000111101001111000
+# UVM_INFO @ 1245: reporter [MISCMP] Miscompare for exp.data: lhs = 'hcbc7a78 : rhs = 'h34994519e499f0
+# UVM_INFO @ 1245: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1245: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1106214409, input B = 2036386609, output OUT =  2252680209170449081
+# Dadda: input A = 01000001111011110111111000001001, input B = 01111001011000001100101100110001, output OUT = 0001111101000011001000001011011100001100001010000100001010111001
+# refmod: input A =  1106214409, input B =  2036386609, output OUT =            -930172200
+# refmod: input A = 01000001111011110111111000001001, input B = 01111001011000001100101100110001, output OUT = 1111111111111111111111111111111111001000100011101011001011011000
+# UVM_INFO @ 1275: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffc88eb2d8 : rhs = 'h1f4320b70c2842b9
+# UVM_INFO @ 1275: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1275: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 2126079140, input B = 2008913794, output OUT =  4271109711481657160
+# Dadda: input A = 01111110101110010110010010100100, input B = 01110111101111011001011110000010, output OUT = 0011101101000110000001111010011100111101100101011101011101001000
+# refmod: input A =  2126079140, input B =  2008913794, output OUT =             117165346
+# refmod: input A = 01111110101110010110010010100100, input B = 01110111101111011001011110000010, output OUT = 0000000000000000000000000000000000000110111110111100110100100010
+# UVM_INFO @ 1305: reporter [MISCMP] Miscompare for exp.data: lhs = 'h6fbcd22 : rhs = 'h3b4607a73d95d748
+# UVM_INFO @ 1305: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1305: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1937459090, input B =  999367748, output OUT =  1936234127615429320
+# Dadda: input A = 01110011011110110100011110010010, input B = 00111011100100010010010001000100, output OUT = 0001101011011110111000101010111000110010100000011000101011001000
+# refmod: input A =  1937459090, input B =   999367748, output OUT =             938091342
+# refmod: input A = 01110011011110110100011110010010, input B = 00111011100100010010010001000100, output OUT = 0000000000000000000000000000000000110111111010100010001101001110
+# UVM_INFO @ 1335: reporter [MISCMP] Miscompare for exp.data: lhs = 'h37ea234e : rhs = 'h1adee2ae32818ac8
+# UVM_INFO @ 1335: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1335: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1889158811, input B = 1197094634, output OUT =  2261501875421920174
+# Dadda: input A = 01110000100110100100011010011011, input B = 01000111010110100011011011101010, output OUT = 0001111101100010011101111111100101000111011001110011101110101110
+# refmod: input A =  1889158811, input B =  1197094634, output OUT =             692064177
+# refmod: input A = 01110000100110100100011010011011, input B = 01000111010110100011011011101010, output OUT = 0000000000000000000000000000000000101001010000000000111110110001
+# UVM_INFO @ 1365: reporter [MISCMP] Miscompare for exp.data: lhs = 'h29400fb1 : rhs = 'h1f6277f947673bae
+# UVM_INFO @ 1365: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1365: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1769917891, input B =  203933794, output OUT =   360946070580108454
+# Dadda: input A = 01101001011111101100110111000011, input B = 00001100001001111100100001100010, output OUT = 0000010100000010010101101000100111110000000000000001110010100110
+# refmod: input A =  1769917891, input B =   203933794, output OUT =            1565984097
+# refmod: input A = 01101001011111101100110111000011, input B = 00001100001001111100100001100010, output OUT = 0000000000000000000000000000000001011101010101110000010101100001
+# UVM_INFO @ 1395: reporter [MISCMP] Miscompare for exp.data: lhs = 'h5d570561 : rhs = 'h5025689f0001ca6
+# UVM_INFO @ 1395: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1395: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1881716334, input B = 1096569457, output OUT =  2063432658602410638
+# Dadda: input A = 01110000001010001011011001101110, input B = 01000001010111000101001001110001, output OUT = 0001110010100010110010010001001000001001111011111100001010001110
+# refmod: input A =  1881716334, input B =  1096569457, output OUT =             785146877
+# refmod: input A = 01110000001010001011011001101110, input B = 01000001010111000101001001110001, output OUT = 0000000000000000000000000000000000101110110011000110001111111101
+# UVM_INFO @ 1425: reporter [MISCMP] Miscompare for exp.data: lhs = 'h2ecc63fd : rhs = 'h1ca2c91209efc28e
+# UVM_INFO @ 1425: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1425: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1774463054, input B = 1288052871, output OUT =  2285602231188128034
+# Dadda: input A = 01101001110001000010100001001110, input B = 01001100110001100010000010000111, output OUT = 0001111110111000000101110001111010011111110011110000000100100010
+# refmod: input A =  1774463054, input B =  1288052871, output OUT =             486410183
+# refmod: input A = 01101001110001000010100001001110, input B = 01001100110001100010000010000111, output OUT = 0000000000000000000000000000000000011100111111100000011111000111
+# UVM_INFO @ 1455: reporter [MISCMP] Miscompare for exp.data: lhs = 'h1cfe07c7 : rhs = 'h1fb8171e9fcf0122
+# UVM_INFO @ 1455: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1455: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1436771488, input B = 1472451230, output OUT =  2115575944734530240
+# Dadda: input A = 01010101101000110110010010100000, input B = 01010111110000111101001010011110, output OUT = 0001110101011100000010010001110011101001010000110101101011000000
+# refmod: input A =  1436771488, input B =  1472451230, output OUT =             -35679742
+# refmod: input A = 01010101101000110110010010100000, input B = 01010111110000111101001010011110, output OUT = 1111111111111111111111111111111111111101110111111001001000000010
+# UVM_INFO @ 1485: reporter [MISCMP] Miscompare for exp.data: lhs = 'hfffffffffddf9202 : rhs = 'h1d5c091ce9435ac0
+# UVM_INFO @ 1485: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1485: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1111989750, input B = 1067334004, output OUT =  1186864472274459000
+# Dadda: input A = 01000010010001111001110111110110, input B = 00111111100111100011100101110100, output OUT = 0001000001111000100101101111001100000010011100110101100101111000
+# refmod: input A =  1111989750, input B =  1067334004, output OUT =              44655746
+# refmod: input A = 01000010010001111001110111110110, input B = 00111111100111100011100101110100, output OUT = 0000000000000000000000000000000000000010101010010110010010000010
+# UVM_INFO @ 1515: reporter [MISCMP] Miscompare for exp.data: lhs = 'h2a96482 : rhs = 'h107896f302735978
+# UVM_INFO @ 1515: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1515: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1114038145, input B = 1876740513, output OUT =  2090760519748868385
+# Dadda: input A = 01000010011001101101111110000001, input B = 01101111110111001100100110100001, output OUT = 0001110100000011110111111001110110001010000010101101100100100001
+# refmod: input A =  1114038145, input B =  1876740513, output OUT =            -762702368
+# refmod: input A = 01000010011001101101111110000001, input B = 01101111110111001100100110100001, output OUT = 1111111111111111111111111111111111010010100010100001010111100000
+# UVM_INFO @ 1545: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd28a15e0 : rhs = 'h1d03df9d8a0ad921
+# UVM_INFO @ 1545: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1545: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1038458893, input B =  416159570, output OUT =   432164606373556010
+# Dadda: input A = 00111101111001011010000000001101, input B = 00011000110011100001011101010010, output OUT = 0000010111111111010110110110101101110111011001000110111100101010
+# refmod: input A =  1038458893, input B =   416159570, output OUT =             622299323
+# refmod: input A = 00111101111001011010000000001101, input B = 00011000110011100001011101010010, output OUT = 0000000000000000000000000000000000100101000101111000100010111011
+# UVM_INFO @ 1575: reporter [MISCMP] Miscompare for exp.data: lhs = 'h251788bb : rhs = 'h5ff5b6b77646f2a
+# UVM_INFO @ 1575: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1575: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1484144752, input B = 1048310288, output OUT =  1555844212402808576
+# Dadda: input A = 01011000011101100100000001110000, input B = 00111110011110111111001000010000, output OUT = 0001010110010111011110000001000101100110000111011110011100000000
+# refmod: input A =  1484144752, input B =  1048310288, output OUT =             435834464
+# refmod: input A = 01011000011101100100000001110000, input B = 00111110011110111111001000010000, output OUT = 0000000000000000000000000000000000011001111110100100111001100000
+# UVM_INFO @ 1605: reporter [MISCMP] Miscompare for exp.data: lhs = 'h19fa4e60 : rhs = 'h15977811661de700
+# UVM_INFO @ 1605: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1605: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =   48072737, input B =  488282587, output OUT =    23473080386530619
+# Dadda: input A = 00000010110111011000100000100001, input B = 00011101000110101001100111011011, output OUT = 0000000001010011011001001010010001101010001110010010110100111011
+# refmod: input A =    48072737, input B =   488282587, output OUT =            -440209850
+# refmod: input A = 00000010110111011000100000100001, input B = 00011101000110101001100111011011, output OUT = 1111111111111111111111111111111111100101110000101110111001000110
+# UVM_INFO @ 1635: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffe5c2ee46 : rhs = 'h5364a46a392d3b
+# UVM_INFO @ 1635: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1635: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =   69971449, input B =  373111244, output OUT =    26107134380872556
+# Dadda: input A = 00000100001010111010110111111001, input B = 00010110001111010011100111001100, output OUT = 0000000001011100110000000100110011100110111000000001001101101100
+# refmod: input A =    69971449, input B =   373111244, output OUT =            -303139795
+# refmod: input A = 00000100001010111010110111111001, input B = 00010110001111010011100111001100, output OUT = 1111111111111111111111111111111111101101111011100111010000101101
+# UVM_INFO @ 1665: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffedee742d : rhs = 'h5cc04ce6e0136c
+# UVM_INFO @ 1665: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1665: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1953219277, input B = 1325665225, output OUT =  2589314872318542325
+# Dadda: input A = 01110100011010111100001011001101, input B = 01001111000001000000101111001001, output OUT = 0010001111101111000110000010100001011000001011101100000111110101
+# refmod: input A =  1953219277, input B =  1325665225, output OUT =             627554052
+# refmod: input A = 01110100011010111100001011001101, input B = 01001111000001000000101111001001, output OUT = 0000000000000000000000000000000000100101011001111011011100000100
+# UVM_INFO @ 1695: reporter [MISCMP] Miscompare for exp.data: lhs = 'h2567b704 : rhs = 'h23ef1828582ec1f5
+# UVM_INFO @ 1695: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1695: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1036759395, input B = 1179113619, output OUT =  1222457122270700505
+# Dadda: input A = 00111101110010111011000101100011, input B = 01000110010001111101100010010011, output OUT = 0001000011110111000010100100011010011110000101110110001111011001
+# refmod: input A =  1036759395, input B =  1179113619, output OUT =            -142354224
+# refmod: input A = 00111101110010111011000101100011, input B = 01000110010001111101100010010011, output OUT = 1111111111111111111111111111111111110111100000111101100011010000
+# UVM_INFO @ 1725: reporter [MISCMP] Miscompare for exp.data: lhs = 'hfffffffff783d8d0 : rhs = 'h10f70a469e1763d9
+# UVM_INFO @ 1725: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1725: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  938463625, input B =  248634348, output OUT =   233334291523591500
+# Dadda: input A = 00110111111011111101000110001001, input B = 00001110110100011101101111101100, output OUT = 0000001100111100111110000100110101001000001011100101110101001100
+# refmod: input A =   938463625, input B =   248634348, output OUT =             689829277
+# refmod: input A = 00110111111011111101000110001001, input B = 00001110110100011101101111101100, output OUT = 0000000000000000000000000000000000101001000111011111010110011101
+# UVM_INFO @ 1755: reporter [MISCMP] Miscompare for exp.data: lhs = 'h291df59d : rhs = 'h33cf84d482e5d4c
+# UVM_INFO @ 1755: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1755: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1365324428, input B =  820141789, output OUT =  1119759618945321692
+# Dadda: input A = 01010001011000010011001010001100, input B = 00110000111000100101111011011101, output OUT = 0000111110001010001011110111000011010001000100000000101011011100
+# refmod: input A =  1365324428, input B =   820141789, output OUT =             545182639
+# refmod: input A = 01010001011000010011001010001100, input B = 00110000111000100101111011011101, output OUT = 0000000000000000000000000000000000100000011111101101001110101111
+# UVM_INFO @ 1785: reporter [MISCMP] Miscompare for exp.data: lhs = 'h207ed3af : rhs = 'hf8a2f70d1100adc
+# UVM_INFO @ 1785: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1785: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1188036696, input B = 1734826974, output OUT =  2061038106322637904
+# Dadda: input A = 01000110110100000000000001011000, input B = 01100111011001110101101111011110, output OUT = 0001110010011010010001110011110011100011111001111001010001010000
+# refmod: input A =  1188036696, input B =  1734826974, output OUT =            -546790278
+# refmod: input A = 01000110110100000000000001011000, input B = 01100111011001110101101111011110, output OUT = 1111111111111111111111111111111111011111011010001010010001111010
+# UVM_INFO @ 1815: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffdf68a47a : rhs = 'h1c9a473ce3e79450
+# UVM_INFO @ 1815: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1815: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  874323444, input B = 1192419745, output OUT =  1042560538142001780
+# Dadda: input A = 00110100000111010001110111110100, input B = 01000111000100101110000110100001, output OUT = 0000111001110111111010110100100100100100110010110100101001110100
+# refmod: input A =   874323444, input B =  1192419745, output OUT =            -318096301
+# refmod: input A = 00110100000111010001110111110100, input B = 01000111000100101110000110100001, output OUT = 1111111111111111111111111111111111101101000010100011110001010011
+# UVM_INFO @ 1845: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffed0a3c53 : rhs = 'he77eb4924cb4a74
+# UVM_INFO @ 1845: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1845: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1778563994, input B = 1742994554, output OUT =  3100027355482488676
+# Dadda: input A = 01101010000000101011101110011010, input B = 01100111111000111111110001111010, output OUT = 0010101100000101100000100111010010000101100001101111111101100100
+# refmod: input A =  1778563994, input B =  1742994554, output OUT =              35569440
+# refmod: input A = 01101010000000101011101110011010, input B = 01100111111000111111110001111010, output OUT = 0000000000000000000000000000000000000010000111101011111100100000
+# UVM_INFO @ 1875: reporter [MISCMP] Miscompare for exp.data: lhs = 'h21ebf20 : rhs = 'h2b0582748586ff64
+# UVM_INFO @ 1875: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1875: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  966729293, input B = 1390763847, output OUT =  1344492150540270171
+# Dadda: input A = 00111001100111110001111001001101, input B = 01010010111001010101111101000111, output OUT = 0001001010101000100110000111110011001100010000001111101001011011
+# refmod: input A =   966729293, input B =  1390763847, output OUT =            -424034554
+# refmod: input A = 00111001100111110001111001001101, input B = 01010010111001010101111101000111, output OUT = 1111111111111111111111111111111111100110101110011011111100000110
+# UVM_INFO @ 1905: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffe6b9bf06 : rhs = 'h12a8987ccc40fa5b
+# UVM_INFO @ 1905: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1905: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1913442669, input B =  532341165, output OUT =  1018604299576169385
+# Dadda: input A = 01110010000011001101000101101101, input B = 00011111101110101110000110101101, output OUT = 0000111000100010110011110011011010110010111011000101001110101001
+# refmod: input A =  1913442669, input B =   532341165, output OUT =            1381101504
+# refmod: input A = 01110010000011001101000101101101, input B = 00011111101110101110000110101101, output OUT = 0000000000000000000000000000000001010010010100011110111111000000
+# UVM_INFO @ 1935: reporter [MISCMP] Miscompare for exp.data: lhs = 'h5251efc0 : rhs = 'he22cf36b2ec53a9
+# UVM_INFO @ 1935: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1935: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 2012210426, input B =  115068029, output OUT =   231541087653070354
+# Dadda: input A = 01110111111011111110010011111010, input B = 00000110110110111100110001111101, output OUT = 0000001100110110100110010110010001111000011110000000011000010010
+# refmod: input A =  2012210426, input B =   115068029, output OUT =            1897142397
+# refmod: input A = 01110111111011111110010011111010, input B = 00000110110110111100110001111101, output OUT = 0000000000000000000000000000000001110001000101000001100001111101
+# UVM_INFO @ 1965: reporter [MISCMP] Miscompare for exp.data: lhs = 'h7114187d : rhs = 'h336996478780612
+# UVM_INFO @ 1965: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1965: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  620728916, input B = 1889620035, output OUT =  1172941795977432060
+# Dadda: input A = 00100100111111111001001001010100, input B = 01110000101000010101000001000011, output OUT = 0001000001000111001000000101100101010011011100011000101111111100
+# refmod: input A =   620728916, input B =  1889620035, output OUT =           -1268891119
+# refmod: input A = 00100100111111111001001001010100, input B = 01110000101000010101000001000011, output OUT = 1111111111111111111111111111111110110100010111100100001000010001
+# UVM_INFO @ 1995: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffb45e4211 : rhs = 'h1047205953718bfc
+# UVM_INFO @ 1995: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 1995: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  933122992, input B = 2098971737, output OUT =  1958598787352877104
+# Dadda: input A = 00110111100111100101001110110000, input B = 01111101000110111100010001011001, output OUT = 0001101100101110010101110011100001010001101011011101100000110000
+# refmod: input A =   933122992, input B =  2098971737, output OUT =           -1165848745
+# refmod: input A = 00110111100111100101001110110000, input B = 01111101000110111100010001011001, output OUT = 1111111111111111111111111111111110111010100000101000111101010111
+# UVM_INFO @ 2025: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffba828f57 : rhs = 'h1b2e573851add830
+# UVM_INFO @ 2025: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2025: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  313422485, input B = 2068416621, output OUT =   648288277369123185
+# Dadda: input A = 00010010101011100111001010010101, input B = 01111011010010011000100001101101, output OUT = 0000100011111111001011101100000011100100101000101111000101110001
+# refmod: input A =   313422485, input B =  2068416621, output OUT =           -1754994136
+# refmod: input A = 00010010101011100111001010010101, input B = 01111011010010011000100001101101, output OUT = 1111111111111111111111111111111110010111011001001110101000101000
+# UVM_INFO @ 2055: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffff9764ea28 : rhs = 'h8ff2ec0e4a2f171
+# UVM_INFO @ 2055: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2055: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1802088037, input B =  649108172, output OUT =  1169750071480138364
+# Dadda: input A = 01101011011010011010111001100101, input B = 00100110101100001001101011001100, output OUT = 0001000000111011110010010111111000001110100011111011101001111100
+# refmod: input A =  1802088037, input B =   649108172, output OUT =            1152979865
+# refmod: input A = 01101011011010011010111001100101, input B = 00100110101100001001101011001100, output OUT = 0000000000000000000000000000000001000100101110010001001110011001
+# UVM_INFO @ 2085: reporter [MISCMP] Miscompare for exp.data: lhs = 'h44b91399 : rhs = 'h103bc97e0e8fba7c
+# UVM_INFO @ 2085: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2085: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  346790413, input B =  750725250, output OUT =   260344319497028250
+# Dadda: input A = 00010100101010111001101000001101, input B = 00101100101111110010100010000010, output OUT = 0000001110011100111011011100011101111010111010010100001010011010
+# refmod: input A =   346790413, input B =   750725250, output OUT =            -403934837
+# refmod: input A = 00010100101010111001101000001101, input B = 00101100101111110010100010000010, output OUT = 1111111111111111111111111111111111100111111011000111000110001011
+# UVM_INFO @ 2115: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffe7ec718b : rhs = 'h39cedc77ae9429a
+# UVM_INFO @ 2115: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2115: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1632635030, input B = 1114402596, output OUT =  1819412715752537880
+# Dadda: input A = 01100001010100000000100010010110, input B = 01000010011011000110111100100100, output OUT = 0001100100111111110110100011100110101110010000100011111100011000
+# refmod: input A =  1632635030, input B =  1114402596, output OUT =             518232434
+# refmod: input A = 01100001010100000000100010010110, input B = 01000010011011000110111100100100, output OUT = 0000000000000000000000000000000000011110111000111001100101110010
+# UVM_INFO @ 2145: reporter [MISCMP] Miscompare for exp.data: lhs = 'h1ee39972 : rhs = 'h193fda39ae423f18
+# UVM_INFO @ 2145: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2145: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1990144937, input B = 1391108412, output OUT =  2768507362959910044
+# Dadda: input A = 01110110100111110011001110101001, input B = 01010010111010101010000100111100, output OUT = 0010011001101011101101101100011101000111010001110110010010011100
+# refmod: input A =  1990144937, input B =  1391108412, output OUT =             599036525
+# refmod: input A = 01110110100111110011001110101001, input B = 01010010111010101010000100111100, output OUT = 0000000000000000000000000000000000100011101101001001001001101101
+# UVM_INFO @ 2175: reporter [MISCMP] Miscompare for exp.data: lhs = 'h23b4926d : rhs = 'h266bb6c74747649c
+# UVM_INFO @ 2175: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2175: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1227984814, input B = 1899474361, output OUT =  2332525669890353854
+# Dadda: input A = 01001001001100011000111110101110, input B = 01110001001101111010110110111001, output OUT = 0010000001011110110010111011110100001111010010110110101010111110
+# refmod: input A =  1227984814, input B =  1899474361, output OUT =            -671489547
+# refmod: input A = 01001001001100011000111110101110, input B = 01110001001101111010110110111001, output OUT = 1111111111111111111111111111111111010111111110011110000111110101
+# UVM_INFO @ 2205: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd7f9e1f5 : rhs = 'h205ecbbd0f4b6abe
+# UVM_INFO @ 2205: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2205: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =   35003410, input B = 1139990756, output OUT =    39903563828477960
+# Dadda: input A = 00000010000101100001110000010010, input B = 01000011111100101110000011100100, output OUT = 0000000010001101110001000001010001110011010001001100000000001000
+# refmod: input A =    35003410, input B =  1139990756, output OUT =           -1104987346
+# refmod: input A = 00000010000101100001110000010010, input B = 01000011111100101110000011100100, output OUT = 1111111111111111111111111111111110111110001000110011101100101110
+# UVM_INFO @ 2235: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffbe233b2e : rhs = 'h8dc4147344c008
+# UVM_INFO @ 2235: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2235: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  902816708, input B =  903636885, output OUT =   815818477743074580
+# Dadda: input A = 00110101110011111110001111000100, input B = 00110101110111000110011110010101, output OUT = 0000101101010010010111101001010101000111000100110110110100010100
+# refmod: input A =   902816708, input B =   903636885, output OUT =               -820177
+# refmod: input A = 00110101110011111110001111000100, input B = 00110101110111000110011110010101, output OUT = 1111111111111111111111111111111111111111111100110111110000101111
+# UVM_INFO @ 2265: reporter [MISCMP] Miscompare for exp.data: lhs = 'hfffffffffff37c2f : rhs = 'hb525e9547136d14
+# UVM_INFO @ 2265: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2265: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1667800056, input B = 1238023516, output OUT =  2064775689314116896
+# Dadda: input A = 01100011011010001001101111111000, input B = 01001001110010101011110101011100, output OUT = 0001110010100111100011101000110010111110011011100010010100100000
+# refmod: input A =  1667800056, input B =  1238023516, output OUT =             429776540
+# refmod: input A = 01100011011010001001101111111000, input B = 01001001110010101011110101011100, output OUT = 0000000000000000000000000000000000011001100111011101111010011100
+# UVM_INFO @ 2295: reporter [MISCMP] Miscompare for exp.data: lhs = 'h199dde9c : rhs = 'h1ca78e8cbe6e2520
+# UVM_INFO @ 2295: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2295: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  955752890, input B =  479675176, output OUT =   458450935723258640
+# Dadda: input A = 00111000111101111010000110111010, input B = 00011100100101110100001100101000, output OUT = 0000011001011100101111101011001001110010101110101111001100010000
+# refmod: input A =   955752890, input B =   479675176, output OUT =             476077714
+# refmod: input A = 00111000111101111010000110111010, input B = 00011100100101110100001100101000, output OUT = 0000000000000000000000000000000000011100011000000101111010010010
+# UVM_INFO @ 2325: reporter [MISCMP] Miscompare for exp.data: lhs = 'h1c605e92 : rhs = 'h65cbeb272baf310
+# UVM_INFO @ 2325: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2325: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  727585398, input B =  354683061, output OUT =   258062216101543278
+# Dadda: input A = 00101011010111100001001001110110, input B = 00010101001001000000100010110101, output OUT = 0000001110010100110100100011011111100000101011101011110101101110
+# refmod: input A =   727585398, input B =   354683061, output OUT =             372902337
+# refmod: input A = 00101011010111100001001001110110, input B = 00010101001001000000100010110101, output OUT = 0000000000000000000000000000000000010110001110100000100111000001
+# UVM_INFO @ 2355: reporter [MISCMP] Miscompare for exp.data: lhs = 'h163a09c1 : rhs = 'h394d237e0aebd6e
+# UVM_INFO @ 2355: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2355: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1930095422, input B =  306376976, output OUT =   591336798783803872
+# Dadda: input A = 01110011000010101110101100111110, input B = 00010010010000101111000100010000, output OUT = 0000100000110100110110011010111101111010001000000001000111100000
+# refmod: input A =  1930095422, input B =   306376976, output OUT =            1623718446
+# refmod: input A = 01110011000010101110101100111110, input B = 00010010010000101111000100010000, output OUT = 0000000000000000000000000000000001100000110001111111101000101110
+# UVM_INFO @ 2385: reporter [MISCMP] Miscompare for exp.data: lhs = 'h60c7fa2e : rhs = 'h834d9af7a2011e0
+# UVM_INFO @ 2385: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2385: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 2058741458, input B =  559782854, output OUT =  1152448169007361132
+# Dadda: input A = 01111010101101011110011011010010, input B = 00100001010111011001101111000110, output OUT = 0000111111111110010100011000000011110111101110111010110001101100
+# refmod: input A =  2058741458, input B =   559782854, output OUT =            1498958604
+# refmod: input A = 01111010101101011110011011010010, input B = 00100001010111011001101111000110, output OUT = 0000000000000000000000000000000001011001010110000100101100001100
+# UVM_INFO @ 2415: reporter [MISCMP] Miscompare for exp.data: lhs = 'h59584b0c : rhs = 'hffe5180f7bbac6c
+# UVM_INFO @ 2415: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2415: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1842724951, input B = 1643266412, output OUT =  3028088018532645812
+# Dadda: input A = 01101101110101011100000001010111, input B = 01100001111100100100000101101100, output OUT = 0010101000000101111011100000001001100101010000010011101110110100
+# refmod: input A =  1842724951, input B =  1643266412, output OUT =             199458539
+# refmod: input A = 01101101110101011100000001010111, input B = 01100001111100100100000101101100, output OUT = 0000000000000000000000000000000000001011111000110111111011101011
+# UVM_INFO @ 2445: reporter [MISCMP] Miscompare for exp.data: lhs = 'hbe37eeb : rhs = 'h2a05ee0265413bb4
+# UVM_INFO @ 2445: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2445: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  745512450, input B =  882143519, output OUT =   657648976101311550
+# Dadda: input A = 00101100011011111001111000000010, input B = 00110100100101000111000100011111, output OUT = 0000100100100000011100000100001001100111011010110000010000111110
+# refmod: input A =   745512450, input B =   882143519, output OUT =            -136631069
+# refmod: input A = 00101100011011111001111000000010, input B = 00110100100101000111000100011111, output OUT = 1111111111111111111111111111111111110111110110110010110011100011
+# UVM_INFO @ 2475: reporter [MISCMP] Miscompare for exp.data: lhs = 'hfffffffff7db2ce3 : rhs = 'h9207042676b043e
+# UVM_INFO @ 2475: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2475: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  625629788, input B = 1403686096, output OUT =   878187834659027648
+# Dadda: input A = 00100101010010100101101001011100, input B = 01010011101010101000110011010000, output OUT = 0000110000101111111100110010111011001010111010111011101011000000
+# refmod: input A =   625629788, input B =  1403686096, output OUT =            -778056308
+# refmod: input A = 00100101010010100101101001011100, input B = 01010011101010101000110011010000, output OUT = 1111111111111111111111111111111111010001100111111100110110001100
+# UVM_INFO @ 2505: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd19fcd8c : rhs = 'hc2ff32ecaebbac0
+# UVM_INFO @ 2505: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2505: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1480563644, input B =  461640550, output OUT =   683488214926164200
+# Dadda: input A = 01011000001111111001101110111100, input B = 00011011100001000001001101100110, output OUT = 0000100101111100001111001110100100000010110101110000000011101000
+# refmod: input A =  1480563644, input B =   461640550, output OUT =            1018923094
+# refmod: input A = 01011000001111111001101110111100, input B = 00011011100001000001001101100110, output OUT = 0000000000000000000000000000000000111100101110111000100001010110
+# UVM_INFO @ 2535: reporter [MISCMP] Miscompare for exp.data: lhs = 'h3cbb8856 : rhs = 'h97c3ce902d700e8
+# UVM_INFO @ 2535: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2535: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  767612117, input B = 1625170259, output OUT =  1247500382996428303
+# Dadda: input A = 00101101110000001101010011010101, input B = 01100000110111100010000101010011, output OUT = 0001000101010000000000101111110100100001101010100111011000001111
+# refmod: input A =   767612117, input B =  1625170259, output OUT =            -857558142
+# refmod: input A = 00101101110000001101010011010101, input B = 01100000110111100010000101010011, output OUT = 1111111111111111111111111111111111001100111000101011001110000010
+# UVM_INFO @ 2565: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffcce2b382 : rhs = 'h115002fd21aa760f
+# UVM_INFO @ 2565: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2565: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  963515151, input B = 1687302410, output OUT =  1625741436353813910
+# Dadda: input A = 00111001011011100001001100001111, input B = 01100100100100100011000100001010, output OUT = 0001011010001111110010110011100100001010100000001001110110010110
+# refmod: input A =   963515151, input B =  1687302410, output OUT =            -723787259
+# refmod: input A = 00111001011011100001001100001111, input B = 01100100100100100011000100001010, output OUT = 1111111111111111111111111111111111010100110110111110001000000101
+# UVM_INFO @ 2595: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd4dbe205 : rhs = 'h168fcb390a809d96
+# UVM_INFO @ 2595: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2595: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1925038577, input B =  990904340, output OUT =  1907529080616724180
+# Dadda: input A = 01110010101111011100000111110001, input B = 00111011000100000000000000010100, output OUT = 0001101001111000111001111001011110100000111000110010011011010100
+# refmod: input A =  1925038577, input B =   990904340, output OUT =             934134237
+# refmod: input A = 01110010101111011100000111110001, input B = 00111011000100000000000000010100, output OUT = 0000000000000000000000000000000000110111101011011100000111011101
+# UVM_INFO @ 2625: reporter [MISCMP] Miscompare for exp.data: lhs = 'h37adc1dd : rhs = 'h1a78e797a0e326d4
+# UVM_INFO @ 2625: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2625: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  118750763, input B = 1651902905, output OUT =   196164730370666515
+# Dadda: input A = 00000111000100111111111000101011, input B = 01100010011101100000100110111001, output OUT = 0000001010111000111010101100100001101111001101000011000000010011
+# refmod: input A =   118750763, input B =  1651902905, output OUT =           -1533152142
+# refmod: input A = 00000111000100111111111000101011, input B = 01100010011101100000100110111001, output OUT = 1111111111111111111111111111111110100100100111011111010001110010
+# UVM_INFO @ 2655: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffa49df472 : rhs = 'h2b8eac86f343013
+# UVM_INFO @ 2655: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2655: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  172849690, input B = 1595393519, output OUT =   275763275187159110
+# Dadda: input A = 00001010010011010111101000011010, input B = 01011111000101111100010111101111, output OUT = 0000001111010011101101010011110011011011101000010000000001000110
+# refmod: input A =   172849690, input B =  1595393519, output OUT =           -1422543829
+# refmod: input A = 00001010010011010111101000011010, input B = 01011111000101111100010111101111, output OUT = 1111111111111111111111111111111110101011001101011011010000101011
+# UVM_INFO @ 2685: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffab35b42b : rhs = 'h3d3b53cdba10046
+# UVM_INFO @ 2685: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2685: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1711865595, input B =  565725749, output OUT =   968446445918705655
+# Dadda: input A = 01100110000010001111111011111011, input B = 00100001101110000100101000110101, output OUT = 0000110101110000100111001110100101011000111110010101011111110111
+# refmod: input A =  1711865595, input B =   565725749, output OUT =            1146139846
+# refmod: input A = 01100110000010001111111011111011, input B = 00100001101110000100101000110101, output OUT = 0000000000000000000000000000000001000100010100001011010011000110
+# UVM_INFO @ 2715: reporter [MISCMP] Miscompare for exp.data: lhs = 'h4450b4c6 : rhs = 'hd709ce958f957f7
+# UVM_INFO @ 2715: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2715: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1846239052, input B =  928372228, output OUT =  1713997062125847856
+# Dadda: input A = 01101110000010110101111101001100, input B = 00110111010101011101011000000100, output OUT = 0001011111001001010101110011111100110010000100110000010100110000
+# refmod: input A =  1846239052, input B =   928372228, output OUT =             917866824
+# refmod: input A = 01101110000010110101111101001100, input B = 00110111010101011101011000000100, output OUT = 0000000000000000000000000000000000110110101101011000100101001000
+# UVM_INFO @ 2745: reporter [MISCMP] Miscompare for exp.data: lhs = 'h36b58948 : rhs = 'h17c9573f32130530
+# UVM_INFO @ 2745: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2745: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1819764520, input B =   28913941, output OUT =    52616563965173320
+# Dadda: input A = 01101100011101110110011100101000, input B = 00000001101110010011000100010101, output OUT = 0000000010111010111011100111110001110100011100100001111001001000
+# refmod: input A =  1819764520, input B =    28913941, output OUT =            1790850579
+# refmod: input A = 01101100011101110110011100101000, input B = 00000001101110010011000100010101, output OUT = 0000000000000000000000000000000001101010101111100011011000010011
+# UVM_INFO @ 2775: reporter [MISCMP] Miscompare for exp.data: lhs = 'h6abe3613 : rhs = 'hbaee7c74721e48
+# UVM_INFO @ 2775: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2775: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1417342136, input B =  486531432, output OUT =   689581499062018752
+# Dadda: input A = 01010100011110101110110010111000, input B = 00011100111111111110000101101000, output OUT = 0000100110010001111000101011100001000111010001011110001011000000
+# refmod: input A =  1417342136, input B =   486531432, output OUT =             930810704
+# refmod: input A = 01010100011110101110110010111000, input B = 00011100111111111110000101101000, output OUT = 0000000000000000000000000000000000110111011110110000101101010000
+# UVM_INFO @ 2805: reporter [MISCMP] Miscompare for exp.data: lhs = 'h377b0b50 : rhs = 'h991e2b84745e2c0
+# UVM_INFO @ 2805: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2805: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  836122450, input B =  646701563, output OUT =   540721695274389350
+# Dadda: input A = 00110001110101100011011101010010, input B = 00100110100010111110000111111011, output OUT = 0000011110000001000001111000010001011001001011010100111101100110
+# refmod: input A =   836122450, input B =   646701563, output OUT =             189420887
+# refmod: input A = 00110001110101100011011101010010, input B = 00100110100010111110000111111011, output OUT = 0000000000000000000000000000000000001011010010100101010101010111
+# UVM_INFO @ 2835: reporter [MISCMP] Miscompare for exp.data: lhs = 'hb4a5557 : rhs = 'h7810784592d4f66
+# UVM_INFO @ 2835: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2835: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1042833283, input B = 1336911954, output OUT =  1394176282071764982
+# Dadda: input A = 00111110001010000101111110000011, input B = 01001111101011111010100001010010, output OUT = 0001001101011001000110111111000100011111001010011000111111110110
+# refmod: input A =  1042833283, input B =  1336911954, output OUT =            -294078671
+# refmod: input A = 00111110001010000101111110000011, input B = 01001111101011111010100001010010, output OUT = 1111111111111111111111111111111111101110011110001011011100110001
+# UVM_INFO @ 2865: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffee78b731 : rhs = 'h13591bf11f298ff6
+# UVM_INFO @ 2865: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2865: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  483828869, input B = 1666001102, output OUT =   806059428933413638
+# Dadda: input A = 00011100110101101010010010000101, input B = 01100011010011010010100011001110, output OUT = 0000101100101111101100101100011110101001011011100010101100000110
+# refmod: input A =   483828869, input B =  1666001102, output OUT =           -1182172233
+# refmod: input A = 00011100110101101010010010000101, input B = 01100011010011010010100011001110, output OUT = 1111111111111111111111111111111110111001100010010111101110110111
+# UVM_INFO @ 2895: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffb9897bb7 : rhs = 'hb2fb2c7a96e2b06
+# UVM_INFO @ 2895: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2895: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  708768271, input B = 1474936840, output OUT =  1045388433921003640
+# Dadda: input A = 00101010001111101111001000001111, input B = 01010111111010011100000000001000, output OUT = 0000111010000001111101110011110111110000001010011101000001111000
+# refmod: input A =   708768271, input B =  1474936840, output OUT =            -766168569
+# refmod: input A = 00101010001111101111001000001111, input B = 01010111111010011100000000001000, output OUT = 1111111111111111111111111111111111010010010101010011001000000111
+# UVM_INFO @ 2925: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffd2553207 : rhs = 'he81f73df029d078
+# UVM_INFO @ 2925: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2925: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1167978686, input B = 1609118791, output OUT =  1879416451130088626
+# Dadda: input A = 01000101100111011111000010111110, input B = 01011111111010010011010001000111, output OUT = 0001101000010101000001110100111000000010101000100101110010110010
+# refmod: input A =  1167978686, input B =  1609118791, output OUT =            -441140105
+# refmod: input A = 01000101100111011111000010111110, input B = 01011111111010010011010001000111, output OUT = 1111111111111111111111111111111111100101101101001011110001110111
+# UVM_INFO @ 2955: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffe5b4bc77 : rhs = 'h1a15074e02a25cb2
+# UVM_INFO @ 2955: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2955: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1265812886, input B = 1254102635, output OUT =  1587459275749554610
+# Dadda: input A = 01001011011100101100010110010110, input B = 01001010110000000001011001101011, output OUT = 0001011000000111110010011100110011110010011100110111100110110010
+# refmod: input A =  1265812886, input B =  1254102635, output OUT =              11710251
+# refmod: input A = 01001011011100101100010110010110, input B = 01001010110000000001011001101011, output OUT = 0000000000000000000000000000000000000000101100101010111100101011
+# UVM_INFO @ 2985: reporter [MISCMP] Miscompare for exp.data: lhs = 'hb2af2b : rhs = 'h1607c9ccf27379b2
+# UVM_INFO @ 2985: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 2985: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A =  115402873, input B =  131184124, output OUT =    15139024801588252
+# Dadda: input A = 00000110111000001110100001111001, input B = 00000111110100011011010111111100, output OUT = 0000000000110101110010001101110011100011100010110110010000011100
+# refmod: input A =   115402873, input B =   131184124, output OUT =             -15781251
+# refmod: input A = 00000110111000001110100001111001, input B = 00000111110100011011010111111100, output OUT = 1111111111111111111111111111111111111111000011110011001001111101
+# UVM_INFO @ 3015: reporter [MISCMP] Miscompare for exp.data: lhs = 'hffffffffff0f327d : rhs = 'h35c8dce38b641c
+# UVM_INFO @ 3015: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 3015: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# Dadda: input A = 1212576424, input B =  939596266, output OUT =  1139332280230032784
+# Dadda: input A = 01001000010001100111001010101000, input B = 00111000000000010001100111101010, output OUT = 0000111111001111101110001010110000100100001111110011010110010000
+# refmod: input A =  1212576424, input B =   939596266, output OUT =             272980158
+# refmod: input A = 01001000010001100111001010101000, input B = 00111000000000010001100111101010, output OUT = 0000000000000000000000000000000000010000010001010101100010111110
+# UVM_INFO @ 3045: reporter [MISCMP] Miscompare for exp.data: lhs = 'h104558be : rhs = 'hfcfb8ac243f3590
+# UVM_INFO @ 3045: reporter [MISCMP] 1 Miscompare(s) for object tr@825 vs. exp@617
+# UVM_WARNING @ 3045: uvm_test_top.env_h.comp [Comparator Mismatch] 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 3045: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/env.sv(42) @ 3045: uvm_test_top.env_h [env] Reporting matched 0
+# UVM_ERROR ../tb/env.sv(44) @ 3045: uvm_test_top.env_h [env] Saw 101 mismatched samples
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  207
+# UVM_WARNING :  101
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Comparator Mismatch]   101
+# [MISCMP]   202
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [env]     2
+# ** Note: $finish    : /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 3045 ns  Iteration: 58  Instance: /top
+# End time: 19:53:10 on Apr 10,2022, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 3
